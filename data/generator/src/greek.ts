@@ -1,0 +1,21 @@
+export const greek = {
+    "α": ["alpha", "greek"],
+    "β": ["beta", "greek"],
+    "γ": ["gamma", "greek"],
+    "δ": ["delta", "greek"],
+    "ε": ["epsilon", "greek"],
+    "ζ": ["zeta", "greek"],
+    "η": ["eta", "greek"],
+    "θ": ["theta", "greek"],
+    "λ": ["lambda", "greek"],
+    "μ": ["mu", "micro", "greek"],
+    "π": ["pi", "greek"],
+    "ρ": ["rho", "greek"],
+    "σ": ["sigma", "greek"],
+    "τ": ["tau", "greek"],
+    "φ": ["phi", "greek"],
+    "χ": ["chi", "greek"],
+    "ψ": ["psi", "greek"],
+    "ω": ["omega", "greek"],
+    "Ω": ["omega", "ohm", "greek", "capital"]
+}
