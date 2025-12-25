@@ -125,7 +125,7 @@ export const greek = {
     },
     Π: {
         category: "greek",
-        keywords: ["pi", "capital"]
+        keywords: ["pi", "capital", "product", "multiplication"]
     },
     Ρ: {
         category: "greek",
@@ -133,7 +133,7 @@ export const greek = {
     },
     Σ: {
         category: "greek",
-        keywords: ["sigma", "capital"]
+        keywords: ["sigma", "capital", "sum", "summation", "statistics"]
     },
     Τ: {
         category: "greek",
