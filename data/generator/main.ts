@@ -1,9 +1,11 @@
 // Library
 import { greek } from "./src/greek.ts";
+import { math } from "./src/math.ts";
 
 // Collate parts
 const charmap = {
-    ...greek
+    ...greek,
+    ...math,
 }
 
 // Write character-map to disk as a JSON file
