@@ -34,7 +34,26 @@ const charmap: Record<string, SymbolEntry> = {
     ...createCategoryMap("common_symbols", _common_symbols),
 };
 
+// Create individual category JSON files
+const categories = {
+    greek: _greek,
+    math: _math,
+    arrows: _arrows,
+    currency: _currency,
+    common_symbols: _common_symbols,
+};
+
+const outDir = "data/generator/out";
+await Deno.mkdir(outDir, { recursive: true });
+
+for (const categoryName in categories) {
+    const categoryRawMap = categories[categoryName as keyof typeof categories];
+    const categoryMap = createCategoryMap(categoryName, categoryRawMap);
+    const categoryOutPath = `${outDir}/${categoryName}.json`;
+    await Deno.writeTextFile(categoryOutPath, JSON.stringify(categoryMap, null, 2));
+}
+
+
 // Write character-map to disk as a JSON file
 const outPath = "data/charmap.json";
 await Deno.writeTextFile(outPath, JSON.stringify(charmap));
-
