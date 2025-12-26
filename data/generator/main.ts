@@ -3,6 +3,7 @@ import { greek as _greek } from "./src/greek.ts";
 import { math as _math } from "./src/math.ts";
 import { arrows as _arrows } from "./src/arrows.ts";
 import { currency as _currency } from "./src/currency.ts";
+import { common_symbols as _common_symbols } from "./src/common_symbols.ts";
 
 // Type Definitions
 import type { RawSymbolEntry, SymbolEntry } from "./types.ts";
@@ -30,6 +31,7 @@ const charmap: Record<string, SymbolEntry> = {
     ...createCategoryMap("math", _math),
     ...createCategoryMap("arrows", _arrows),
     ...createCategoryMap("currency", _currency),
+    ...createCategoryMap("common_symbols", _common_symbols),
 };
 
 // Write character-map to disk as a JSON file
