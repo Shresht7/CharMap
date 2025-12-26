@@ -8,7 +8,7 @@ import (
 )
 
 type model struct {
-	list []string
+	symbols map[string]Symbol
 }
 
 func (m *model) Init() tea.Cmd {
@@ -30,8 +30,8 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func (m *model) View() string {
 	var s strings.Builder
-	for _, r := range m.list {
-		s.WriteString(fmt.Sprintf("%s\n", r))
+	for _, r := range m.symbols {
+		s.WriteString(fmt.Sprintf("%s\n", r.Symbol))
 	}
 	return s.String()
 }

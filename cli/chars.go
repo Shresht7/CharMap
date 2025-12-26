@@ -9,20 +9,20 @@ type Symbol struct {
 	Symbol      string   `json:"symbol"`
 	Category    string   `json:"category"`
 	Unicode     string   `json:"unicode"`
-	Decimal     int      `json:"decimal"`
+	Decimal     string   `json:"decimal"`
 	Latex       string   `json:"latex"`
 	Keywords    []string `json:"keywords"`
 	Description string   `json:"description"`
 }
 
-func LoadSymbols(path string) ([]Symbol, error) {
+func LoadSymbols(path string) (map[string]Symbol, error) {
 	file, err := os.Open(path)
 	if err != nil {
 		return nil, err
 	}
 	defer file.Close()
 
-	var symbols []Symbol
+	var symbols map[string]Symbol
 	decoder := json.NewDecoder(file)
 	if err := decoder.Decode(&symbols); err != nil {
 		return nil, err

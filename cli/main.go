@@ -7,9 +7,14 @@ import (
 )
 
 func main() {
-	initialModel := &model{
-		list: []string{"Item 1", "Item 2", "Item 3"},
+	symbols, err := LoadSymbols("../data/charmap.json")
+	if err != nil {
+		fmt.Println("Error loading symbols:", err)
+		return
 	}
+
+	initialModel := &model{symbols}
+
 	p := tea.NewProgram(initialModel)
 	if _, err := p.Run(); err != nil {
 		fmt.Println(err)
