@@ -53,13 +53,17 @@ function renderCharacterMap() {
 }
 
 function renderCharacterSection(parent, category, symbols) {
-    const section = document.createElement('section');
+    const section = document.createElement('details');
     section.id = category;
     section.classList.add('category');
+    section.setAttribute('open', 'true');
 
+    const summary = document.createElement('summary');
     const header = document.createElement('h2');
-    header.textContent = formatDisplayString(category)
-    section.appendChild(header);
+    header.textContent = formatDisplayString(category);
+    summary.appendChild(header);
+    section.appendChild(summary);
+
 
     const grid = document.createElement('div');
     grid.classList.add('grid');

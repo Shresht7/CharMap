@@ -48,7 +48,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;    
+        gap: 3rem;    
     }
 }
 
@@ -69,7 +69,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+
+    & > summary {
+        cursor: pointer;
+        
+        & > h2 {
+            display: inline;
+            user-select: none;
+        }
+    }
 }
 
 .grid {
