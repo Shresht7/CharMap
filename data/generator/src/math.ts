@@ -1,4 +1,6 @@
-export const math = {
+import type { RawSymbolEntry } from "../types.ts"
+
+export const math: Record<string, RawSymbolEntry> = {
     "∞": {
         description: "Represents infinity, a concept of endlessness.",
         latex: "\\infty",
