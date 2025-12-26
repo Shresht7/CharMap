@@ -1,0 +1,132 @@
+{
+  "°C": {
+    "description": "Degrees Celsius.",
+    "latex": "^{\\circ}\\text{C}",
+    "keywords": [
+      "celsius",
+      "temperature",
+      "degree"
+    ],
+    "category": "scientific",
+    "unicode": "U+00b0",
+    "decimal": "176"
+  },
+  "°F": {
+    "description": "Degrees Fahrenheit.",
+    "latex": "^{\\circ}\\text{F}",
+    "keywords": [
+      "fahrenheit",
+      "temperature",
+      "degree"
+    ],
+    "category": "scientific",
+    "unicode": "U+00b0",
+    "decimal": "176"
+  },
+  "ℏ": {
+    "description": "Planck constant over 2 pi (reduced Planck constant).",
+    "latex": "\\hbar",
+    "keywords": [
+      "planck",
+      "constant",
+      "quantum",
+      "h-bar"
+    ],
+    "category": "scientific",
+    "unicode": "U+210f",
+    "decimal": "8463"
+  },
+  "ℓ": {
+    "description": "Script small l (litre).",
+    "latex": "\\ell",
+    "keywords": [
+      "litre",
+      "volume",
+      "script l"
+    ],
+    "category": "scientific",
+    "unicode": "U+2113",
+    "decimal": "8467"
+  },
+  "Å": {
+    "description": "Angstrom unit.",
+    "latex": "\\textnormal{\\AA}",
+    "keywords": [
+      "angstrom",
+      "unit",
+      "length"
+    ],
+    "category": "scientific",
+    "unicode": "U+212b",
+    "decimal": "8491"
+  },
+  "‰": {
+    "description": "Per mille sign (per thousand).",
+    "latex": "\\textperthousand",
+    "keywords": [
+      "per mille",
+      "per thousand",
+      "basis points"
+    ],
+    "category": "scientific",
+    "unicode": "U+2030",
+    "decimal": "8240"
+  },
+  " ": {
+    "description": "Em space.",
+    "latex": "\\quad",
+    "keywords": [
+      "space",
+      "em"
+    ],
+    "category": "scientific",
+    "unicode": "U+2001",
+    "decimal": "8193"
+  },
+  "℮": {
+    "description": "Estimated symbol (for packaging).",
+    "latex": "",
+    "keywords": [
+      "estimated",
+      "estimate"
+    ],
+    "category": "scientific",
+    "unicode": "U+212e",
+    "decimal": "8494"
+  },
+  "⇌": {
+    "description": "Rightwards arrow over leftwards arrow (equilibrium).",
+    "latex": "\\rightleftharpoons",
+    "keywords": [
+      "equilibrium",
+      "reaction",
+      "chemical"
+    ],
+    "category": "scientific",
+    "unicode": "U+21cc",
+    "decimal": "8652"
+  },
+  "⥰": {
+    "description": "Reversible reaction arrow.",
+    "latex": "\\leftrightarrows",
+    "keywords": [
+      "reversible",
+      "reaction",
+      "chemical"
+    ],
+    "category": "scientific",
+    "unicode": "U+2970",
+    "decimal": "10608"
+  },
+  "⏃": {
+    "description": "Up-pointing triangle with dot (chemical bond).",
+    "latex": "",
+    "keywords": [
+      "chemical bond",
+      "bond"
+    ],
+    "category": "scientific",
+    "unicode": "U+23c3",
+    "decimal": "9155"
+  }
+}
