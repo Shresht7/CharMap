@@ -1,7 +1,6 @@
 {
   "🚀": {
     "description": "Rocket.",
-    "latex": "",
     "keywords": [
       "rocket",
       "space",
@@ -13,7 +12,6 @@
   },
   "❤": {
     "description": "Red heart.",
-    "latex": "",
     "keywords": [
       "heart",
       "love",
@@ -25,7 +23,6 @@
   },
   "⭐": {
     "description": "Star.",
-    "latex": "",
     "keywords": [
       "star"
     ],
@@ -35,7 +32,6 @@
   },
   "🔥": {
     "description": "Fire.",
-    "latex": "",
     "keywords": [
       "fire",
       "flame",
@@ -47,7 +43,6 @@
   },
   "💡": {
     "description": "Light bulb.",
-    "latex": "",
     "keywords": [
       "lightbulb",
       "bulb",
@@ -59,7 +54,6 @@
   },
   "🎉": {
     "description": "Party popper.",
-    "latex": "",
     "keywords": [
       "party",
       "celebration",
@@ -71,7 +65,6 @@
   },
   "👍": {
     "description": "Thumbs up.",
-    "latex": "",
     "keywords": [
       "thumbs",
       "up",
@@ -84,7 +77,6 @@
   },
   "👎": {
     "description": "Thumbs down.",
-    "latex": "",
     "keywords": [
       "thumbs",
       "down",
@@ -97,7 +89,6 @@
   },
   "😀": {
     "description": "Grinning face.",
-    "latex": "",
     "keywords": [
       "smile",
       "happy",
@@ -110,7 +101,6 @@
   },
   "😂": {
     "description": "Face with tears of joy.",
-    "latex": "",
     "keywords": [
       "laugh",
       "cry",
@@ -124,7 +114,6 @@
   },
   "😊": {
     "description": "Smiling face with smiling eyes.",
-    "latex": "",
     "keywords": [
       "smile",
       "blush",
@@ -136,7 +125,6 @@
   },
   "😍": {
     "description": "Smiling face with heart-eyes.",
-    "latex": "",
     "keywords": [
       "love",
       "heart",
@@ -148,7 +136,6 @@
   },
   "🤔": {
     "description": "Thinking face.",
-    "latex": "",
     "keywords": [
       "thinking",
       "hmm",
@@ -160,7 +147,6 @@
   },
   "💻": {
     "description": "Laptop computer.",
-    "latex": "",
     "keywords": [
       "computer",
       "laptop",
@@ -172,7 +158,6 @@
   },
   "📱": {
     "description": "Mobile phone.",
-    "latex": "",
     "keywords": [
       "phone",
       "mobile",
@@ -184,7 +169,6 @@
   },
   "⚡": {
     "description": "High voltage sign.",
-    "latex": "",
     "keywords": [
       "lightning",
       "bolt",
@@ -197,7 +181,6 @@
   },
   "☀": {
     "description": "Sun.",
-    "latex": "",
     "keywords": [
       "sun",
       "sunny",
@@ -209,7 +192,6 @@
   },
   "☁": {
     "description": "Cloud.",
-    "latex": "",
     "keywords": [
       "cloud",
       "weather"
@@ -220,7 +202,6 @@
   },
   "☂": {
     "description": "Umbrella.",
-    "latex": "",
     "keywords": [
       "umbrella",
       "rain"
@@ -231,7 +212,6 @@
   },
   "❄": {
     "description": "Snowflake.",
-    "latex": "",
     "keywords": [
       "snow",
       "snowflake",
@@ -243,7 +223,6 @@
   },
   "🌙": {
     "description": "Crescent moon.",
-    "latex": "",
     "keywords": [
       "moon",
       "night"
@@ -254,7 +233,6 @@
   },
   "⚠": {
     "description": "Warning sign.",
-    "latex": "",
     "keywords": [
       "warning",
       "caution",
@@ -266,7 +244,6 @@
   },
   "🔒": {
     "description": "Locked padlock.",
-    "latex": "",
     "keywords": [
       "lock",
       "locked",
@@ -278,7 +255,6 @@
   },
   "🔓": {
     "description": "Unlocked padlock.",
-    "latex": "",
     "keywords": [
       "unlock",
       "unlocked",

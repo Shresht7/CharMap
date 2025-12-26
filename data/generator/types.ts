@@ -1,6 +1,6 @@
 export interface RawSymbolEntry {
     description: string;
-    latex: string;
+    latex?: string;
     keywords: string[];
 }
 
