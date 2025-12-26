@@ -30,3 +30,11 @@ func LoadSymbols(path string) (map[string]Symbol, error) {
 
 	return symbols, nil
 }
+
+func GetAllSymbols(symbols map[string]Symbol) []Symbol {
+	allSymbols := make([]Symbol, 0, len(symbols))
+	for _, symbol := range symbols {
+		allSymbols = append(allSymbols, symbol)
+	}
+	return allSymbols
+}

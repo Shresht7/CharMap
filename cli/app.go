@@ -30,7 +30,7 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func (m *model) View() string {
 	var s strings.Builder
-	for _, r := range m.symbols {
+	for _, r := range GetAllSymbols(m.symbols) {
 		s.WriteString(fmt.Sprintf("%s\n", r.Symbol))
 	}
 	return s.String()
