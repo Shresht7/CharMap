@@ -8,7 +8,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b1",
-    "decimal": "945"
+    "decimal": "945",
+    "symbol": "α"
   },
   "β": {
     "description": "Lowercase Greek letter beta.",
@@ -19,7 +20,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b2",
-    "decimal": "946"
+    "decimal": "946",
+    "symbol": "β"
   },
   "γ": {
     "description": "Lowercase Greek letter gamma.",
@@ -30,7 +32,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b3",
-    "decimal": "947"
+    "decimal": "947",
+    "symbol": "γ"
   },
   "δ": {
     "description": "Lowercase Greek letter delta.",
@@ -41,7 +44,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b4",
-    "decimal": "948"
+    "decimal": "948",
+    "symbol": "δ"
   },
   "ε": {
     "description": "Lowercase Greek letter epsilon.",
@@ -52,7 +56,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b5",
-    "decimal": "949"
+    "decimal": "949",
+    "symbol": "ε"
   },
   "ζ": {
     "description": "Lowercase Greek letter zeta.",
@@ -63,7 +68,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b6",
-    "decimal": "950"
+    "decimal": "950",
+    "symbol": "ζ"
   },
   "η": {
     "description": "Lowercase Greek letter eta.",
@@ -74,7 +80,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b7",
-    "decimal": "951"
+    "decimal": "951",
+    "symbol": "η"
   },
   "θ": {
     "description": "Lowercase Greek letter theta.",
@@ -85,7 +92,8 @@
     ],
     "category": "greek",
     "unicode": "U+03b8",
-    "decimal": "952"
+    "decimal": "952",
+    "symbol": "θ"
   },
   "λ": {
     "description": "Lowercase Greek letter lambda.",
@@ -96,7 +104,8 @@
     ],
     "category": "greek",
     "unicode": "U+03bb",
-    "decimal": "955"
+    "decimal": "955",
+    "symbol": "λ"
   },
   "μ": {
     "description": "Lowercase Greek letter mu.",
@@ -107,7 +116,8 @@
     ],
     "category": "greek",
     "unicode": "U+03bc",
-    "decimal": "956"
+    "decimal": "956",
+    "symbol": "μ"
   },
   "π": {
     "description": "Lowercase Greek letter pi.",
@@ -118,7 +128,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c0",
-    "decimal": "960"
+    "decimal": "960",
+    "symbol": "π"
   },
   "ρ": {
     "description": "Lowercase Greek letter rho.",
@@ -129,7 +140,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c1",
-    "decimal": "961"
+    "decimal": "961",
+    "symbol": "ρ"
   },
   "σ": {
     "description": "Lowercase Greek letter sigma.",
@@ -140,7 +152,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c3",
-    "decimal": "963"
+    "decimal": "963",
+    "symbol": "σ"
   },
   "τ": {
     "description": "Lowercase Greek letter tau.",
@@ -151,7 +164,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c4",
-    "decimal": "964"
+    "decimal": "964",
+    "symbol": "τ"
   },
   "φ": {
     "description": "Lowercase Greek letter phi.",
@@ -162,7 +176,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c6",
-    "decimal": "966"
+    "decimal": "966",
+    "symbol": "φ"
   },
   "χ": {
     "description": "Lowercase Greek letter chi.",
@@ -173,7 +188,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c7",
-    "decimal": "967"
+    "decimal": "967",
+    "symbol": "χ"
   },
   "ψ": {
     "description": "Lowercase Greek letter psi.",
@@ -184,7 +200,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c8",
-    "decimal": "968"
+    "decimal": "968",
+    "symbol": "ψ"
   },
   "ω": {
     "description": "Lowercase Greek letter omega.",
@@ -195,7 +212,8 @@
     ],
     "category": "greek",
     "unicode": "U+03c9",
-    "decimal": "969"
+    "decimal": "969",
+    "symbol": "ω"
   },
   "Α": {
     "description": "Capital Greek letter alpha.",
@@ -206,7 +224,8 @@
     ],
     "category": "greek",
     "unicode": "U+0391",
-    "decimal": "913"
+    "decimal": "913",
+    "symbol": "Α"
   },
   "Β": {
     "description": "Capital Greek letter beta.",
@@ -217,7 +236,8 @@
     ],
     "category": "greek",
     "unicode": "U+0392",
-    "decimal": "914"
+    "decimal": "914",
+    "symbol": "Β"
   },
   "Γ": {
     "description": "Capital Greek letter gamma.",
@@ -228,7 +248,8 @@
     ],
     "category": "greek",
     "unicode": "U+0393",
-    "decimal": "915"
+    "decimal": "915",
+    "symbol": "Γ"
   },
   "Δ": {
     "description": "Capital Greek letter delta.",
@@ -239,7 +260,8 @@
     ],
     "category": "greek",
     "unicode": "U+0394",
-    "decimal": "916"
+    "decimal": "916",
+    "symbol": "Δ"
   },
   "Ε": {
     "description": "Capital Greek letter epsilon.",
@@ -250,7 +272,8 @@
     ],
     "category": "greek",
     "unicode": "U+0395",
-    "decimal": "917"
+    "decimal": "917",
+    "symbol": "Ε"
   },
   "Ζ": {
     "description": "Capital Greek letter zeta.",
@@ -261,7 +284,8 @@
     ],
     "category": "greek",
     "unicode": "U+0396",
-    "decimal": "918"
+    "decimal": "918",
+    "symbol": "Ζ"
   },
   "Η": {
     "description": "Capital Greek letter eta.",
@@ -272,7 +296,8 @@
     ],
     "category": "greek",
     "unicode": "U+0397",
-    "decimal": "919"
+    "decimal": "919",
+    "symbol": "Η"
   },
   "Θ": {
     "description": "Capital Greek letter theta.",
@@ -283,7 +308,8 @@
     ],
     "category": "greek",
     "unicode": "U+0398",
-    "decimal": "920"
+    "decimal": "920",
+    "symbol": "Θ"
   },
   "Λ": {
     "description": "Capital Greek letter lambda.",
@@ -294,7 +320,8 @@
     ],
     "category": "greek",
     "unicode": "U+039b",
-    "decimal": "923"
+    "decimal": "923",
+    "symbol": "Λ"
   },
   "Μ": {
     "description": "Capital Greek letter mu.",
@@ -305,7 +332,8 @@
     ],
     "category": "greek",
     "unicode": "U+039c",
-    "decimal": "924"
+    "decimal": "924",
+    "symbol": "Μ"
   },
   "Ν": {
     "description": "Capital Greek letter nu.",
@@ -316,7 +344,8 @@
     ],
     "category": "greek",
     "unicode": "U+039d",
-    "decimal": "925"
+    "decimal": "925",
+    "symbol": "Ν"
   },
   "Ξ": {
     "description": "Capital Greek letter xi.",
@@ -327,7 +356,8 @@
     ],
     "category": "greek",
     "unicode": "U+039e",
-    "decimal": "926"
+    "decimal": "926",
+    "symbol": "Ξ"
   },
   "Ο": {
     "description": "Capital Greek letter omicron.",
@@ -338,7 +368,8 @@
     ],
     "category": "greek",
     "unicode": "U+039f",
-    "decimal": "927"
+    "decimal": "927",
+    "symbol": "Ο"
   },
   "Π": {
     "description": "Capital Greek letter pi.",
@@ -351,7 +382,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a0",
-    "decimal": "928"
+    "decimal": "928",
+    "symbol": "Π"
   },
   "Ρ": {
     "description": "Capital Greek letter rho.",
@@ -362,7 +394,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a1",
-    "decimal": "929"
+    "decimal": "929",
+    "symbol": "Ρ"
   },
   "Σ": {
     "description": "Capital Greek letter sigma.",
@@ -376,7 +409,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a3",
-    "decimal": "931"
+    "decimal": "931",
+    "symbol": "Σ"
   },
   "Τ": {
     "description": "Capital Greek letter tau.",
@@ -387,7 +421,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a4",
-    "decimal": "932"
+    "decimal": "932",
+    "symbol": "Τ"
   },
   "Υ": {
     "description": "Capital Greek letter upsilon.",
@@ -398,7 +433,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a5",
-    "decimal": "933"
+    "decimal": "933",
+    "symbol": "Υ"
   },
   "Φ": {
     "description": "Capital Greek letter phi.",
@@ -409,7 +445,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a6",
-    "decimal": "934"
+    "decimal": "934",
+    "symbol": "Φ"
   },
   "Χ": {
     "description": "Capital Greek letter chi.",
@@ -420,7 +457,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a7",
-    "decimal": "935"
+    "decimal": "935",
+    "symbol": "Χ"
   },
   "Ψ": {
     "description": "Capital Greek letter psi.",
@@ -431,7 +469,8 @@
     ],
     "category": "greek",
     "unicode": "U+03a8",
-    "decimal": "936"
+    "decimal": "936",
+    "symbol": "Ψ"
   },
   "Ω": {
     "description": "Capital Greek letter omega.",
@@ -442,6 +481,7 @@
     ],
     "category": "greek",
     "unicode": "U+03a9",
-    "decimal": "937"
+    "decimal": "937",
+    "symbol": "Ω"
   }
 }

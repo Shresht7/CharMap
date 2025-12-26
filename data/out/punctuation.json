@@ -9,7 +9,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+201e",
-    "decimal": "8222"
+    "decimal": "8222",
+    "symbol": "„"
   },
   "“": {
     "description": "Left double quotation mark.",
@@ -21,7 +22,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+201c",
-    "decimal": "8220"
+    "decimal": "8220",
+    "symbol": "“"
   },
   "”": {
     "description": "Right double quotation mark.",
@@ -33,7 +35,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+201d",
-    "decimal": "8221"
+    "decimal": "8221",
+    "symbol": "”"
   },
   "‘": {
     "description": "Left single quotation mark.",
@@ -45,7 +48,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2018",
-    "decimal": "8216"
+    "decimal": "8216",
+    "symbol": "‘"
   },
   "’": {
     "description": "Right single quotation mark, apostrophe.",
@@ -58,7 +62,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2019",
-    "decimal": "8217"
+    "decimal": "8217",
+    "symbol": "’"
   },
   "‹": {
     "description": "Single left-pointing angle quotation mark.",
@@ -71,7 +76,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2039",
-    "decimal": "8249"
+    "decimal": "8249",
+    "symbol": "‹"
   },
   "›": {
     "description": "Single right-pointing angle quotation mark.",
@@ -84,7 +90,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+203a",
-    "decimal": "8250"
+    "decimal": "8250",
+    "symbol": "›"
   },
   "«": {
     "description": "Left-pointing double angle quotation mark.",
@@ -97,7 +104,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+00ab",
-    "decimal": "171"
+    "decimal": "171",
+    "symbol": "«"
   },
   "»": {
     "description": "Right-pointing double angle quotation mark.",
@@ -110,7 +118,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+00bb",
-    "decimal": "187"
+    "decimal": "187",
+    "symbol": "»"
   },
   "′": {
     "description": "Prime.",
@@ -122,7 +131,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2032",
-    "decimal": "8242"
+    "decimal": "8242",
+    "symbol": "′"
   },
   "″": {
     "description": "Double prime.",
@@ -134,7 +144,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2033",
-    "decimal": "8243"
+    "decimal": "8243",
+    "symbol": "″"
   },
   "‴": {
     "description": "Triple prime.",
@@ -145,7 +156,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2034",
-    "decimal": "8244"
+    "decimal": "8244",
+    "symbol": "‴"
   },
   "℗": {
     "description": "Sound recording copyright sign.",
@@ -156,7 +168,8 @@
     ],
     "category": "punctuation",
     "unicode": "U+2117",
-    "decimal": "8471"
+    "decimal": "8471",
+    "symbol": "℗"
   },
   "№": {
     "description": "Numero sign.",
@@ -167,6 +180,7 @@
     ],
     "category": "punctuation",
     "unicode": "U+2116",
-    "decimal": "8470"
+    "decimal": "8470",
+    "symbol": "№"
   }
 }

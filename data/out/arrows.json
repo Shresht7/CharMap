@@ -9,7 +9,8 @@
     ],
     "category": "arrows",
     "unicode": "U+2190",
-    "decimal": "8592"
+    "decimal": "8592",
+    "symbol": "←"
   },
   "↑": {
     "description": "Upwards arrow.",
@@ -21,7 +22,8 @@
     ],
     "category": "arrows",
     "unicode": "U+2191",
-    "decimal": "8593"
+    "decimal": "8593",
+    "symbol": "↑"
   },
   "→": {
     "description": "Rightwards arrow.",
@@ -33,7 +35,8 @@
     ],
     "category": "arrows",
     "unicode": "U+2192",
-    "decimal": "8594"
+    "decimal": "8594",
+    "symbol": "→"
   },
   "↓": {
     "description": "Downwards arrow.",
@@ -45,7 +48,8 @@
     ],
     "category": "arrows",
     "unicode": "U+2193",
-    "decimal": "8595"
+    "decimal": "8595",
+    "symbol": "↓"
   },
   "↔": {
     "description": "Left right arrow.",
@@ -59,7 +63,8 @@
     ],
     "category": "arrows",
     "unicode": "U+2194",
-    "decimal": "8596"
+    "decimal": "8596",
+    "symbol": "↔"
   },
   "↕": {
     "description": "Up down arrow.",
@@ -73,7 +78,8 @@
     ],
     "category": "arrows",
     "unicode": "U+2195",
-    "decimal": "8597"
+    "decimal": "8597",
+    "symbol": "↕"
   },
   "⇐": {
     "description": "Leftwards double arrow.",
@@ -86,7 +92,8 @@
     ],
     "category": "arrows",
     "unicode": "U+21d0",
-    "decimal": "8656"
+    "decimal": "8656",
+    "symbol": "⇐"
   },
   "⇑": {
     "description": "Upwards double arrow.",
@@ -99,7 +106,8 @@
     ],
     "category": "arrows",
     "unicode": "U+21d1",
-    "decimal": "8657"
+    "decimal": "8657",
+    "symbol": "⇑"
   },
   "⇒": {
     "description": "Rightwards double arrow.",
@@ -112,7 +120,8 @@
     ],
     "category": "arrows",
     "unicode": "U+21d2",
-    "decimal": "8658"
+    "decimal": "8658",
+    "symbol": "⇒"
   },
   "⇓": {
     "description": "Downwards double arrow.",
@@ -125,7 +134,8 @@
     ],
     "category": "arrows",
     "unicode": "U+21d3",
-    "decimal": "8659"
+    "decimal": "8659",
+    "symbol": "⇓"
   },
   "⇔": {
     "description": "Left right double arrow.",
@@ -140,7 +150,8 @@
     ],
     "category": "arrows",
     "unicode": "U+21d4",
-    "decimal": "8660"
+    "decimal": "8660",
+    "symbol": "⇔"
   },
   "⇕": {
     "description": "Up down double arrow.",
@@ -155,6 +166,7 @@
     ],
     "category": "arrows",
     "unicode": "U+21d5",
-    "decimal": "8661"
+    "decimal": "8661",
+    "symbol": "⇕"
   }
 }

@@ -7,7 +7,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+00a9",
-    "decimal": "169"
+    "decimal": "169",
+    "symbol": "©"
   },
   "®": {
     "description": "Registered trade mark sign.",
@@ -18,7 +19,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+00ae",
-    "decimal": "174"
+    "decimal": "174",
+    "symbol": "®"
   },
   "™": {
     "description": "Trade mark sign.",
@@ -28,7 +30,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2122",
-    "decimal": "8482"
+    "decimal": "8482",
+    "symbol": "™"
   },
   "°": {
     "description": "Degree sign.",
@@ -38,7 +41,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+00b0",
-    "decimal": "176"
+    "decimal": "176",
+    "symbol": "°"
   },
   "•": {
     "description": "Bullet point.",
@@ -49,7 +53,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2022",
-    "decimal": "8226"
+    "decimal": "8226",
+    "symbol": "•"
   },
   "…": {
     "description": "Horizontal ellipsis.",
@@ -60,7 +65,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2026",
-    "decimal": "8230"
+    "decimal": "8230",
+    "symbol": "…"
   },
   "–": {
     "description": "En dash.",
@@ -71,7 +77,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2013",
-    "decimal": "8211"
+    "decimal": "8211",
+    "symbol": "–"
   },
   "—": {
     "description": "Em dash.",
@@ -82,7 +89,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2014",
-    "decimal": "8212"
+    "decimal": "8212",
+    "symbol": "—"
   },
   "§": {
     "description": "Section sign.",
@@ -92,7 +100,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+00a7",
-    "decimal": "167"
+    "decimal": "167",
+    "symbol": "§"
   },
   "¶": {
     "description": "Pilcrow sign (paragraph sign).",
@@ -103,7 +112,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+00b6",
-    "decimal": "182"
+    "decimal": "182",
+    "symbol": "¶"
   },
   "†": {
     "description": "Dagger.",
@@ -113,7 +123,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2020",
-    "decimal": "8224"
+    "decimal": "8224",
+    "symbol": "†"
   },
   "‡": {
     "description": "Double dagger.",
@@ -124,7 +135,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2021",
-    "decimal": "8225"
+    "decimal": "8225",
+    "symbol": "‡"
   },
   "★": {
     "description": "Black star.",
@@ -135,7 +147,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2605",
-    "decimal": "9733"
+    "decimal": "9733",
+    "symbol": "★"
   },
   "☆": {
     "description": "White star.",
@@ -146,7 +159,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2606",
-    "decimal": "9734"
+    "decimal": "9734",
+    "symbol": "☆"
   },
   "♠": {
     "description": "Black spade suit.",
@@ -157,7 +171,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2660",
-    "decimal": "9824"
+    "decimal": "9824",
+    "symbol": "♠"
   },
   "♣": {
     "description": "Black club suit.",
@@ -168,7 +183,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2663",
-    "decimal": "9827"
+    "decimal": "9827",
+    "symbol": "♣"
   },
   "♥": {
     "description": "Black heart suit.",
@@ -179,7 +195,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2665",
-    "decimal": "9829"
+    "decimal": "9829",
+    "symbol": "♥"
   },
   "♦": {
     "description": "Black diamond suit.",
@@ -190,7 +207,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2666",
-    "decimal": "9830"
+    "decimal": "9830",
+    "symbol": "♦"
   },
   "✓": {
     "description": "Check mark.",
@@ -202,7 +220,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2713",
-    "decimal": "10003"
+    "decimal": "10003",
+    "symbol": "✓"
   },
   "✗": {
     "description": "Ballot X.",
@@ -214,7 +233,8 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2717",
-    "decimal": "10007"
+    "decimal": "10007",
+    "symbol": "✗"
   },
   "✠": {
     "description": "Maltese cross.",
@@ -225,6 +245,7 @@
     ],
     "category": "common_symbols",
     "unicode": "U+2720",
-    "decimal": "10016"
+    "decimal": "10016",
+    "symbol": "✠"
   }
 }

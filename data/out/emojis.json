@@ -8,7 +8,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "🚀"
   },
   "❤": {
     "description": "Red heart.",
@@ -19,7 +20,8 @@
     ],
     "category": "emojis",
     "unicode": "U+2764",
-    "decimal": "10084"
+    "decimal": "10084",
+    "symbol": "❤"
   },
   "⭐": {
     "description": "Star.",
@@ -28,7 +30,8 @@
     ],
     "category": "emojis",
     "unicode": "U+2b50",
-    "decimal": "11088"
+    "decimal": "11088",
+    "symbol": "⭐"
   },
   "🔥": {
     "description": "Fire.",
@@ -39,7 +42,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "🔥"
   },
   "💡": {
     "description": "Light bulb.",
@@ -50,7 +54,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "💡"
   },
   "🎉": {
     "description": "Party popper.",
@@ -61,7 +66,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83c",
-    "decimal": "55356"
+    "decimal": "55356",
+    "symbol": "🎉"
   },
   "👍": {
     "description": "Thumbs up.",
@@ -73,7 +79,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "👍"
   },
   "👎": {
     "description": "Thumbs down.",
@@ -85,7 +92,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "👎"
   },
   "😀": {
     "description": "Grinning face.",
@@ -97,7 +105,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "😀"
   },
   "😂": {
     "description": "Face with tears of joy.",
@@ -110,7 +119,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "😂"
   },
   "😊": {
     "description": "Smiling face with smiling eyes.",
@@ -121,7 +131,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "😊"
   },
   "😍": {
     "description": "Smiling face with heart-eyes.",
@@ -132,7 +143,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "😍"
   },
   "🤔": {
     "description": "Thinking face.",
@@ -143,7 +155,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83e",
-    "decimal": "55358"
+    "decimal": "55358",
+    "symbol": "🤔"
   },
   "💻": {
     "description": "Laptop computer.",
@@ -154,7 +167,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "💻"
   },
   "📱": {
     "description": "Mobile phone.",
@@ -165,7 +179,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "📱"
   },
   "⚡": {
     "description": "High voltage sign.",
@@ -177,7 +192,8 @@
     ],
     "category": "emojis",
     "unicode": "U+26a1",
-    "decimal": "9889"
+    "decimal": "9889",
+    "symbol": "⚡"
   },
   "☀": {
     "description": "Sun.",
@@ -188,7 +204,8 @@
     ],
     "category": "emojis",
     "unicode": "U+2600",
-    "decimal": "9728"
+    "decimal": "9728",
+    "symbol": "☀"
   },
   "☁": {
     "description": "Cloud.",
@@ -198,7 +215,8 @@
     ],
     "category": "emojis",
     "unicode": "U+2601",
-    "decimal": "9729"
+    "decimal": "9729",
+    "symbol": "☁"
   },
   "☂": {
     "description": "Umbrella.",
@@ -208,7 +226,8 @@
     ],
     "category": "emojis",
     "unicode": "U+2602",
-    "decimal": "9730"
+    "decimal": "9730",
+    "symbol": "☂"
   },
   "❄": {
     "description": "Snowflake.",
@@ -219,7 +238,8 @@
     ],
     "category": "emojis",
     "unicode": "U+2744",
-    "decimal": "10052"
+    "decimal": "10052",
+    "symbol": "❄"
   },
   "🌙": {
     "description": "Crescent moon.",
@@ -229,7 +249,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83c",
-    "decimal": "55356"
+    "decimal": "55356",
+    "symbol": "🌙"
   },
   "⚠": {
     "description": "Warning sign.",
@@ -240,7 +261,8 @@
     ],
     "category": "emojis",
     "unicode": "U+26a0",
-    "decimal": "9888"
+    "decimal": "9888",
+    "symbol": "⚠"
   },
   "🔒": {
     "description": "Locked padlock.",
@@ -251,7 +273,8 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "🔒"
   },
   "🔓": {
     "description": "Unlocked padlock.",
@@ -262,6 +285,7 @@
     ],
     "category": "emojis",
     "unicode": "U+d83d",
-    "decimal": "55357"
+    "decimal": "55357",
+    "symbol": "🔓"
   }
 }

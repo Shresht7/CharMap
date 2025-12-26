@@ -8,7 +8,8 @@
     ],
     "category": "math",
     "unicode": "U+221e",
-    "decimal": "8734"
+    "decimal": "8734",
+    "symbol": "∞"
   },
   "≈": {
     "description": "Indicates approximate equality.",
@@ -20,7 +21,8 @@
     ],
     "category": "math",
     "unicode": "U+2248",
-    "decimal": "8776"
+    "decimal": "8776",
+    "symbol": "≈"
   },
   "≠": {
     "description": "Indicates inequality, that two values are not equal.",
@@ -31,7 +33,8 @@
     ],
     "category": "math",
     "unicode": "U+2260",
-    "decimal": "8800"
+    "decimal": "8800",
+    "symbol": "≠"
   },
   "≤": {
     "description": "Indicates that one value is less than or equal to another.",
@@ -43,7 +46,8 @@
     ],
     "category": "math",
     "unicode": "U+2264",
-    "decimal": "8804"
+    "decimal": "8804",
+    "symbol": "≤"
   },
   "≥": {
     "description": "Indicates that one value is greater than or equal to another.",
@@ -55,7 +59,8 @@
     ],
     "category": "math",
     "unicode": "U+2265",
-    "decimal": "8805"
+    "decimal": "8805",
+    "symbol": "≥"
   },
   "±": {
     "description": "Indicates plus or minus, used for approximations or ranges.",
@@ -67,7 +72,8 @@
     ],
     "category": "math",
     "unicode": "U+00b1",
-    "decimal": "177"
+    "decimal": "177",
+    "symbol": "±"
   },
   "×": {
     "description": "Multiplication sign, also used for cross products.",
@@ -79,7 +85,8 @@
     ],
     "category": "math",
     "unicode": "U+00d7",
-    "decimal": "215"
+    "decimal": "215",
+    "symbol": "×"
   },
   "÷": {
     "description": "Division sign.",
@@ -90,7 +97,8 @@
     ],
     "category": "math",
     "unicode": "U+00f7",
-    "decimal": "247"
+    "decimal": "247",
+    "symbol": "÷"
   },
   "∫": {
     "description": "Integral sign, used in calculus for integration.",
@@ -103,7 +111,8 @@
     ],
     "category": "math",
     "unicode": "U+222b",
-    "decimal": "8747"
+    "decimal": "8747",
+    "symbol": "∫"
   },
   "√": {
     "description": "Square root symbol.",
@@ -116,7 +125,8 @@
     ],
     "category": "math",
     "unicode": "U+221a",
-    "decimal": "8730"
+    "decimal": "8730",
+    "symbol": "√"
   },
   "∂": {
     "description": "Partial derivative symbol.",
@@ -127,7 +137,8 @@
     ],
     "category": "math",
     "unicode": "U+2202",
-    "decimal": "8706"
+    "decimal": "8706",
+    "symbol": "∂"
   },
   "∇": {
     "description": "Nabla symbol, used for gradient, divergence, and curl.",
@@ -139,7 +150,8 @@
     ],
     "category": "math",
     "unicode": "U+2207",
-    "decimal": "8711"
+    "decimal": "8711",
+    "symbol": "∇"
   },
   "∈": {
     "description": "Element of set symbol.",
@@ -151,7 +163,8 @@
     ],
     "category": "math",
     "unicode": "U+2208",
-    "decimal": "8712"
+    "decimal": "8712",
+    "symbol": "∈"
   },
   "∉": {
     "description": "Not an element of set symbol.",
@@ -162,7 +175,8 @@
     ],
     "category": "math",
     "unicode": "U+2209",
-    "decimal": "8713"
+    "decimal": "8713",
+    "symbol": "∉"
   },
   "∪": {
     "description": "Union of sets symbol.",
@@ -173,7 +187,8 @@
     ],
     "category": "math",
     "unicode": "U+222a",
-    "decimal": "8746"
+    "decimal": "8746",
+    "symbol": "∪"
   },
   "∩": {
     "description": "Intersection of sets symbol.",
@@ -184,7 +199,8 @@
     ],
     "category": "math",
     "unicode": "U+2229",
-    "decimal": "8745"
+    "decimal": "8745",
+    "symbol": "∩"
   },
   "⊂": {
     "description": "Subset of set symbol.",
@@ -194,7 +210,8 @@
     ],
     "category": "math",
     "unicode": "U+2282",
-    "decimal": "8834"
+    "decimal": "8834",
+    "symbol": "⊂"
   },
   "⊃": {
     "description": "Superset of set symbol.",
@@ -204,7 +221,8 @@
     ],
     "category": "math",
     "unicode": "U+2283",
-    "decimal": "8835"
+    "decimal": "8835",
+    "symbol": "⊃"
   },
   "∅": {
     "description": "Empty set symbol.",
@@ -216,7 +234,8 @@
     ],
     "category": "math",
     "unicode": "U+2205",
-    "decimal": "8709"
+    "decimal": "8709",
+    "symbol": "∅"
   },
   "∀": {
     "description": "For all quantifier symbol.",
@@ -228,7 +247,8 @@
     ],
     "category": "math",
     "unicode": "U+2200",
-    "decimal": "8704"
+    "decimal": "8704",
+    "symbol": "∀"
   },
   "∃": {
     "description": "There exists quantifier symbol.",
@@ -240,6 +260,7 @@
     ],
     "category": "math",
     "unicode": "U+2203",
-    "decimal": "8707"
+    "decimal": "8707",
+    "symbol": "∃"
   }
 }
