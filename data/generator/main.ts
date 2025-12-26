@@ -56,7 +56,7 @@ const categories = {
     scientific: _scientific,
 };
 
-const outDir = "data/generator/out";
+const outDir = "data/out";
 await Deno.mkdir(outDir, { recursive: true });
 
 for (const categoryName in categories) {
