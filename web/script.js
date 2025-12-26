@@ -42,7 +42,10 @@ function renderCharacterMap() {
         return
     }
 
-    const symbolsGroupedByCategory = Object.groupBy(Object.values(CHARMAP), c => c.category)
+    const symbolsGroupedByCategory = Object.groupBy(
+        Object.values(CHARMAP).sort((a, b) => a.category.localeCompare(b.category)),
+        c => c.category
+    )
 
     for (const [category, symbols] of Object.entries(symbolsGroupedByCategory)) {
         renderCharacterSection(charMapSection, category, symbols);
