@@ -2,25 +2,26 @@
 import { greek as _greek } from "./src/greek.ts";
 import { math as _math } from "./src/math.ts";
 
-const processEntry = (char: string, data: any, category: string) => {
-    const unicode = `U+${char.charCodeAt(0).toString(16).padStart(4, '0')}`;
-    const decimal = char.charCodeAt(0).toString();
-    return { ...data, category, unicode, decimal };
+// Helper to add category, unicode, and decimal
+const createCategoryMap = (
+    rawMap: Record<string, { description: string; latex: string; keywords: string[] }>,
+    category: string
+) => {
+    return Object.fromEntries(
+        Object.entries(rawMap).map(([char, data]) => {
+            const unicode = `U+${char.charCodeAt(0).toString(16).padStart(4, '0')}`;
+            const decimal = char.charCodeAt(0).toString();
+            return [
+                char,
+                { ...data, category, unicode, decimal }
+            ];
+        })
+    );
 };
 
 const charmap = {
-    ...Object.fromEntries(
-        Object.entries(_greek).map(([char, data]) => [
-            char,
-            processEntry(char, data, "greek"),
-        ])
-    ),
-    ...Object.fromEntries(
-        Object.entries(_math).map(([char, data]) => [
-            char,
-            processEntry(char, data, "math"),
-        ])
-    ),
+    ...createCategoryMap(_greek, "greek"),
+    ...createCategoryMap(_math, "math"),
 };
 
 // Write character-map to disk as a JSON file
