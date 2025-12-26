@@ -1,0 +1,291 @@
+{
+  "🚀": {
+    "description": "Rocket.",
+    "latex": "",
+    "keywords": [
+      "rocket",
+      "space",
+      "launch"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "❤": {
+    "description": "Red heart.",
+    "latex": "",
+    "keywords": [
+      "heart",
+      "love",
+      "red"
+    ],
+    "category": "emojis",
+    "unicode": "U+2764",
+    "decimal": "10084"
+  },
+  "⭐": {
+    "description": "Star.",
+    "latex": "",
+    "keywords": [
+      "star"
+    ],
+    "category": "emojis",
+    "unicode": "U+2b50",
+    "decimal": "11088"
+  },
+  "🔥": {
+    "description": "Fire.",
+    "latex": "",
+    "keywords": [
+      "fire",
+      "flame",
+      "hot"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "💡": {
+    "description": "Light bulb.",
+    "latex": "",
+    "keywords": [
+      "lightbulb",
+      "bulb",
+      "idea"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "🎉": {
+    "description": "Party popper.",
+    "latex": "",
+    "keywords": [
+      "party",
+      "celebration",
+      "confetti"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83c",
+    "decimal": "55356"
+  },
+  "👍": {
+    "description": "Thumbs up.",
+    "latex": "",
+    "keywords": [
+      "thumbs",
+      "up",
+      "like",
+      "good"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "👎": {
+    "description": "Thumbs down.",
+    "latex": "",
+    "keywords": [
+      "thumbs",
+      "down",
+      "dislike",
+      "bad"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "😀": {
+    "description": "Grinning face.",
+    "latex": "",
+    "keywords": [
+      "smile",
+      "happy",
+      "grin",
+      "face"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "😂": {
+    "description": "Face with tears of joy.",
+    "latex": "",
+    "keywords": [
+      "laugh",
+      "cry",
+      "tears",
+      "joy",
+      "lol"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "😊": {
+    "description": "Smiling face with smiling eyes.",
+    "latex": "",
+    "keywords": [
+      "smile",
+      "blush",
+      "happy"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "😍": {
+    "description": "Smiling face with heart-eyes.",
+    "latex": "",
+    "keywords": [
+      "love",
+      "heart",
+      "eyes"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "🤔": {
+    "description": "Thinking face.",
+    "latex": "",
+    "keywords": [
+      "thinking",
+      "hmm",
+      "wonder"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83e",
+    "decimal": "55358"
+  },
+  "💻": {
+    "description": "Laptop computer.",
+    "latex": "",
+    "keywords": [
+      "computer",
+      "laptop",
+      "pc"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "📱": {
+    "description": "Mobile phone.",
+    "latex": "",
+    "keywords": [
+      "phone",
+      "mobile",
+      "smartphone"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "⚡": {
+    "description": "High voltage sign.",
+    "latex": "",
+    "keywords": [
+      "lightning",
+      "bolt",
+      "zap",
+      "electric"
+    ],
+    "category": "emojis",
+    "unicode": "U+26a1",
+    "decimal": "9889"
+  },
+  "☀": {
+    "description": "Sun.",
+    "latex": "",
+    "keywords": [
+      "sun",
+      "sunny",
+      "weather"
+    ],
+    "category": "emojis",
+    "unicode": "U+2600",
+    "decimal": "9728"
+  },
+  "☁": {
+    "description": "Cloud.",
+    "latex": "",
+    "keywords": [
+      "cloud",
+      "weather"
+    ],
+    "category": "emojis",
+    "unicode": "U+2601",
+    "decimal": "9729"
+  },
+  "☂": {
+    "description": "Umbrella.",
+    "latex": "",
+    "keywords": [
+      "umbrella",
+      "rain"
+    ],
+    "category": "emojis",
+    "unicode": "U+2602",
+    "decimal": "9730"
+  },
+  "❄": {
+    "description": "Snowflake.",
+    "latex": "",
+    "keywords": [
+      "snow",
+      "snowflake",
+      "cold"
+    ],
+    "category": "emojis",
+    "unicode": "U+2744",
+    "decimal": "10052"
+  },
+  "🌙": {
+    "description": "Crescent moon.",
+    "latex": "",
+    "keywords": [
+      "moon",
+      "night"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83c",
+    "decimal": "55356"
+  },
+  "⚠": {
+    "description": "Warning sign.",
+    "latex": "",
+    "keywords": [
+      "warning",
+      "caution",
+      "alert"
+    ],
+    "category": "emojis",
+    "unicode": "U+26a0",
+    "decimal": "9888"
+  },
+  "🔒": {
+    "description": "Locked padlock.",
+    "latex": "",
+    "keywords": [
+      "lock",
+      "locked",
+      "secure"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  },
+  "🔓": {
+    "description": "Unlocked padlock.",
+    "latex": "",
+    "keywords": [
+      "unlock",
+      "unlocked",
+      "open"
+    ],
+    "category": "emojis",
+    "unicode": "U+d83d",
+    "decimal": "55357"
+  }
+}

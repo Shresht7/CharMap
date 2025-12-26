@@ -4,6 +4,7 @@ import { math as _math } from "./src/math.ts";
 import { arrows as _arrows } from "./src/arrows.ts";
 import { currency as _currency } from "./src/currency.ts";
 import { common_symbols as _common_symbols } from "./src/common_symbols.ts";
+import { emojis as _emojis } from "./src/emojis.ts";
 
 // Type Definitions
 import type { RawSymbolEntry, SymbolEntry } from "./types.ts";
@@ -32,7 +33,12 @@ const charmap: Record<string, SymbolEntry> = {
     ...createCategoryMap("arrows", _arrows),
     ...createCategoryMap("currency", _currency),
     ...createCategoryMap("common_symbols", _common_symbols),
+    ...createCategoryMap("emojis", _emojis),
 };
+
+// Write character-map to disk as a JSON file
+const outPath = "data/charmap.json";
+await Deno.writeTextFile(outPath, JSON.stringify(charmap));
 
 // Create individual category JSON files
 const categories = {
@@ -41,6 +47,7 @@ const categories = {
     arrows: _arrows,
     currency: _currency,
     common_symbols: _common_symbols,
+    emojis: _emojis,
 };
 
 const outDir = "data/generator/out";
@@ -52,8 +59,3 @@ for (const categoryName in categories) {
     const categoryOutPath = `${outDir}/${categoryName}.json`;
     await Deno.writeTextFile(categoryOutPath, JSON.stringify(categoryMap, null, 2));
 }
-
-
-// Write character-map to disk as a JSON file
-const outPath = "data/charmap.json";
-await Deno.writeTextFile(outPath, JSON.stringify(charmap));
