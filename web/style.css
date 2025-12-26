@@ -31,6 +31,29 @@ header, footer {
     text-align: center;
 }
 
+#toast-container {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.toast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--clr-text);
+    color: var(--clr-background);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
 main {
     flex: 1;
     display: flex;
