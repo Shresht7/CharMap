@@ -77,11 +77,6 @@ function renderSymbol(parent, symbol) {
     parent.appendChild(div)
 }
 
-async function copyToClipboard(text) {
-    await navigator.clipboard.writeText(text)
-    toast(`Copied "${text}" to clipboard`)
-}
-
 
 document.addEventListener('DOMContentLoaded', loadCharacterMap)
 
@@ -89,9 +84,14 @@ document.addEventListener('DOMContentLoaded', loadCharacterMap)
 // HELPER FUNCTIONS
 // ----------------
 
+async function copyToClipboard(text) {
+    await navigator.clipboard.writeText(text)
+    toast(`Copied "${text}" to clipboard`)
+}
+
 function formatDisplayString(s) {
     const words = s.split(/[-_\s+]/g).map(capitalize)
     return words.join(' ')
 }
 
-const capitalize = (s) => s[0].toUpperCase() + s.slice(1)
+const capitalize = (s) => s[0].toUpperCase() + s.slice(1).toLowerCase()
