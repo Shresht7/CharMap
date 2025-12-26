@@ -1,9 +1,15 @@
+/* CSS VARIABLES */
+/* ------------- */
+
 :root {
     --max-width: 960px;
     --clr-text: #333;
     --clr-background: whitesmoke;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* BASE */
+/* ---- */
 
 *, *::before, *::after {
     margin: 0;
@@ -31,43 +37,23 @@ header, footer {
     text-align: center;
 }
 
-#toast-container {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.toast {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    background-color: var(--clr-text);
-    color: var(--clr-background);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-}
-
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    & > section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;    
+    }
 }
 
-main > section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+/* CHARACTER MAP & SYMBOLS */
+/* ----------------------- */
 
 #character-map {
     width: 100%;
@@ -104,10 +90,36 @@ main > section {
     border-radius: 2px;
     cursor: pointer;
     transition: scale 0.25s ease-out;
+
+    &:hover {
+        color: var(--clr-background);
+        background: var(--clr-text);
+        scale: 1.25;
+    }
 }
 
-.symbol:hover {
+/* TOAST NOTIFICATIONS */
+/* ------------------- */
+
+#toast-container {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.toast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--clr-text);
     color: var(--clr-background);
-    background: var(--clr-text);
-    scale: 1.25;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
