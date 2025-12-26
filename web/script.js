@@ -52,7 +52,7 @@ function renderCharacterSection(parent, category, symbols) {
     section.classList.add('category');
 
     const header = document.createElement('h2');
-    header.textContent = category;
+    header.textContent = formatDisplayString(category)
     section.appendChild(header);
 
     const grid = document.createElement('div');
@@ -74,3 +74,14 @@ function renderSymbol(parent, symbol) {
 }
 
 document.addEventListener('DOMContentLoaded', loadCharacterMap)
+
+// ----------------
+// HELPER FUNCTIONS
+// ----------------
+
+function formatDisplayString(s) {
+    const words = s.split(/[-_\s+]/g).map(capitalize)
+    return words.join(' ')
+}
+
+const capitalize = (s) => s[0].toUpperCase() + s.slice(1)
