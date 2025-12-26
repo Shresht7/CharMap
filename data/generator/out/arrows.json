@@ -1,0 +1,160 @@
+{
+  "←": {
+    "description": "Leftwards arrow.",
+    "latex": "\\leftarrow",
+    "keywords": [
+      "arrow",
+      "left",
+      "west"
+    ],
+    "category": "arrows",
+    "unicode": "U+2190",
+    "decimal": "8592"
+  },
+  "↑": {
+    "description": "Upwards arrow.",
+    "latex": "\\uparrow",
+    "keywords": [
+      "arrow",
+      "up",
+      "north"
+    ],
+    "category": "arrows",
+    "unicode": "U+2191",
+    "decimal": "8593"
+  },
+  "→": {
+    "description": "Rightwards arrow.",
+    "latex": "\\rightarrow",
+    "keywords": [
+      "arrow",
+      "right",
+      "east"
+    ],
+    "category": "arrows",
+    "unicode": "U+2192",
+    "decimal": "8594"
+  },
+  "↓": {
+    "description": "Downwards arrow.",
+    "latex": "\\downarrow",
+    "keywords": [
+      "arrow",
+      "down",
+      "south"
+    ],
+    "category": "arrows",
+    "unicode": "U+2193",
+    "decimal": "8595"
+  },
+  "↔": {
+    "description": "Left right arrow.",
+    "latex": "\\leftrightarrow",
+    "keywords": [
+      "arrow",
+      "left",
+      "right",
+      "east",
+      "west"
+    ],
+    "category": "arrows",
+    "unicode": "U+2194",
+    "decimal": "8596"
+  },
+  "↕": {
+    "description": "Up down arrow.",
+    "latex": "\\updownarrow",
+    "keywords": [
+      "arrow",
+      "up",
+      "down",
+      "north",
+      "south"
+    ],
+    "category": "arrows",
+    "unicode": "U+2195",
+    "decimal": "8597"
+  },
+  "⇐": {
+    "description": "Leftwards double arrow.",
+    "latex": "\\Leftarrow",
+    "keywords": [
+      "arrow",
+      "left",
+      "double",
+      "west"
+    ],
+    "category": "arrows",
+    "unicode": "U+21d0",
+    "decimal": "8656"
+  },
+  "⇑": {
+    "description": "Upwards double arrow.",
+    "latex": "\\Uparrow",
+    "keywords": [
+      "arrow",
+      "up",
+      "double",
+      "north"
+    ],
+    "category": "arrows",
+    "unicode": "U+21d1",
+    "decimal": "8657"
+  },
+  "⇒": {
+    "description": "Rightwards double arrow.",
+    "latex": "\\Rightarrow",
+    "keywords": [
+      "arrow",
+      "right",
+      "double",
+      "east"
+    ],
+    "category": "arrows",
+    "unicode": "U+21d2",
+    "decimal": "8658"
+  },
+  "⇓": {
+    "description": "Downwards double arrow.",
+    "latex": "\\Downarrow",
+    "keywords": [
+      "arrow",
+      "down",
+      "double",
+      "south"
+    ],
+    "category": "arrows",
+    "unicode": "U+21d3",
+    "decimal": "8659"
+  },
+  "⇔": {
+    "description": "Left right double arrow.",
+    "latex": "\\Leftrightarrow",
+    "keywords": [
+      "arrow",
+      "left",
+      "right",
+      "double",
+      "east",
+      "west"
+    ],
+    "category": "arrows",
+    "unicode": "U+21d4",
+    "decimal": "8660"
+  },
+  "⇕": {
+    "description": "Up down double arrow.",
+    "latex": "\\Updownarrow",
+    "keywords": [
+      "arrow",
+      "up",
+      "down",
+      "double",
+      "north",
+      "south"
+    ],
+    "category": "arrows",
+    "unicode": "U+21d5",
+    "decimal": "8661"
+  }
+}

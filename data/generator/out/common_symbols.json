@@ -1,0 +1,230 @@
+{
+  "©": {
+    "description": "Copyright sign.",
+    "latex": "copyright",
+    "keywords": [
+      "copyright"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+00a9",
+    "decimal": "169"
+  },
+  "®": {
+    "description": "Registered trade mark sign.",
+    "latex": "\textregistered",
+    "keywords": [
+      "registered",
+      "trademark"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+00ae",
+    "decimal": "174"
+  },
+  "™": {
+    "description": "Trade mark sign.",
+    "latex": "\texttrademark",
+    "keywords": [
+      "trademark"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2122",
+    "decimal": "8482"
+  },
+  "°": {
+    "description": "Degree sign.",
+    "latex": "degree",
+    "keywords": [
+      "degree"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+00b0",
+    "decimal": "176"
+  },
+  "•": {
+    "description": "Bullet point.",
+    "latex": "\textbullet",
+    "keywords": [
+      "bullet",
+      "point"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2022",
+    "decimal": "8226"
+  },
+  "…": {
+    "description": "Horizontal ellipsis.",
+    "latex": "dots",
+    "keywords": [
+      "ellipsis",
+      "dots"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2026",
+    "decimal": "8230"
+  },
+  "–": {
+    "description": "En dash.",
+    "latex": "--",
+    "keywords": [
+      "dash",
+      "en"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2013",
+    "decimal": "8211"
+  },
+  "—": {
+    "description": "Em dash.",
+    "latex": "---",
+    "keywords": [
+      "dash",
+      "em"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2014",
+    "decimal": "8212"
+  },
+  "§": {
+    "description": "Section sign.",
+    "latex": "S",
+    "keywords": [
+      "section"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+00a7",
+    "decimal": "167"
+  },
+  "¶": {
+    "description": "Pilcrow sign (paragraph sign).",
+    "latex": "P",
+    "keywords": [
+      "paragraph",
+      "pilcrow"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+00b6",
+    "decimal": "182"
+  },
+  "†": {
+    "description": "Dagger.",
+    "latex": "dagger",
+    "keywords": [
+      "dagger"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2020",
+    "decimal": "8224"
+  },
+  "‡": {
+    "description": "Double dagger.",
+    "latex": "ddagger",
+    "keywords": [
+      "double",
+      "dagger"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2021",
+    "decimal": "8225"
+  },
+  "★": {
+    "description": "Black star.",
+    "latex": "star",
+    "keywords": [
+      "star",
+      "black"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2605",
+    "decimal": "9733"
+  },
+  "☆": {
+    "description": "White star.",
+    "latex": "\u000barstar",
+    "keywords": [
+      "star",
+      "white"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2606",
+    "decimal": "9734"
+  },
+  "♠": {
+    "description": "Black spade suit.",
+    "latex": "spadesuit",
+    "keywords": [
+      "spade",
+      "card"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2660",
+    "decimal": "9824"
+  },
+  "♣": {
+    "description": "Black club suit.",
+    "latex": "clubsuit",
+    "keywords": [
+      "club",
+      "card"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2663",
+    "decimal": "9827"
+  },
+  "♥": {
+    "description": "Black heart suit.",
+    "latex": "heartsuit",
+    "keywords": [
+      "heart",
+      "card"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2665",
+    "decimal": "9829"
+  },
+  "♦": {
+    "description": "Black diamond suit.",
+    "latex": "diamondsuit",
+    "keywords": [
+      "diamond",
+      "card"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2666",
+    "decimal": "9830"
+  },
+  "✓": {
+    "description": "Check mark.",
+    "latex": "checkmark",
+    "keywords": [
+      "check",
+      "tick",
+      "checkmark"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2713",
+    "decimal": "10003"
+  },
+  "✗": {
+    "description": "Ballot X.",
+    "latex": "\texttimes",
+    "keywords": [
+      "cross",
+      "x",
+      "wrong"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2717",
+    "decimal": "10007"
+  },
+  "✠": {
+    "description": "Maltese cross.",
+    "latex": "",
+    "keywords": [
+      "cross",
+      "maltese"
+    ],
+    "category": "common_symbols",
+    "unicode": "U+2720",
+    "decimal": "10016"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "€": {
+    "description": "Euro sign.",
+    "latex": "\\euro",
+    "keywords": [
+      "euro",
+      "currency"
+    ],
+    "category": "currency",
+    "unicode": "U+20ac",
+    "decimal": "8364"
+  },
+  "$": {
+    "description": "Dollar sign.",
+    "latex": "\\$",
+    "keywords": [
+      "dollar",
+      "currency",
+      "usd"
+    ],
+    "category": "currency",
+    "unicode": "U+0024",
+    "decimal": "36"
+  },
+  "£": {
+    "description": "Pound sign.",
+    "latex": "\\textsterling",
+    "keywords": [
+      "pound",
+      "currency",
+      "gbp"
+    ],
+    "category": "currency",
+    "unicode": "U+00a3",
+    "decimal": "163"
+  },
+  "¥": {
+    "description": "Yen sign.",
+    "latex": "\\yen",
+    "keywords": [
+      "yen",
+      "currency",
+      "jpy"
+    ],
+    "category": "currency",
+    "unicode": "U+00a5",
+    "decimal": "165"
+  },
+  "₹": {
+    "description": "Indian Rupee sign.",
+    "latex": "\\textrupee",
+    "keywords": [
+      "rupee",
+      "currency",
+      "inr"
+    ],
+    "category": "currency",
+    "unicode": "U+20b9",
+    "decimal": "8377"
+  },
+  "₽": {
+    "description": "Russian Ruble sign.",
+    "latex": "\\textruble",
+    "keywords": [
+      "ruble",
+      "currency",
+      "rub"
+    ],
+    "category": "currency",
+    "unicode": "U+20bd",
+    "decimal": "8381"
+  },
+  "₩": {
+    "description": "Won sign.",
+    "latex": "\\won",
+    "keywords": [
+      "won",
+      "currency",
+      "krw"
+    ],
+    "category": "currency",
+    "unicode": "U+20a9",
+    "decimal": "8361"
+  },
+  "¢": {
+    "description": "Cent sign.",
+    "latex": "\\cent",
+    "keywords": [
+      "cent",
+      "currency"
+    ],
+    "category": "currency",
+    "unicode": "U+00a2",
+    "decimal": "162"
+  }
+}
