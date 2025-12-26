@@ -22,7 +22,7 @@ const createCategoryMap = (
             const decimal = char.charCodeAt(0).toString();
             return [
                 char,
-                { ...data, category, unicode, decimal }
+                { ...data, category, unicode, decimal, symbol: char }
             ];
         })
     );

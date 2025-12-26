@@ -8,7 +8,8 @@
     ],
     "category": "currency",
     "unicode": "U+20ac",
-    "decimal": "8364"
+    "decimal": "8364",
+    "symbol": "€"
   },
   "$": {
     "description": "Dollar sign.",
@@ -20,7 +21,8 @@
     ],
     "category": "currency",
     "unicode": "U+0024",
-    "decimal": "36"
+    "decimal": "36",
+    "symbol": "$"
   },
   "£": {
     "description": "Pound sign.",
@@ -32,7 +34,8 @@
     ],
     "category": "currency",
     "unicode": "U+00a3",
-    "decimal": "163"
+    "decimal": "163",
+    "symbol": "£"
   },
   "¥": {
     "description": "Yen sign.",
@@ -44,7 +47,8 @@
     ],
     "category": "currency",
     "unicode": "U+00a5",
-    "decimal": "165"
+    "decimal": "165",
+    "symbol": "¥"
   },
   "₹": {
     "description": "Indian Rupee sign.",
@@ -56,7 +60,8 @@
     ],
     "category": "currency",
     "unicode": "U+20b9",
-    "decimal": "8377"
+    "decimal": "8377",
+    "symbol": "₹"
   },
   "₽": {
     "description": "Russian Ruble sign.",
@@ -68,7 +73,8 @@
     ],
     "category": "currency",
     "unicode": "U+20bd",
-    "decimal": "8381"
+    "decimal": "8381",
+    "symbol": "₽"
   },
   "₩": {
     "description": "Won sign.",
@@ -80,7 +86,8 @@
     ],
     "category": "currency",
     "unicode": "U+20a9",
-    "decimal": "8361"
+    "decimal": "8361",
+    "symbol": "₩"
   },
   "¢": {
     "description": "Cent sign.",
@@ -91,6 +98,7 @@
     ],
     "category": "currency",
     "unicode": "U+00a2",
-    "decimal": "162"
+    "decimal": "162",
+    "symbol": "¢"
   }
 }

@@ -9,7 +9,8 @@
     ],
     "category": "scientific",
     "unicode": "U+00b0",
-    "decimal": "176"
+    "decimal": "176",
+    "symbol": "°C"
   },
   "°F": {
     "description": "Degrees Fahrenheit.",
@@ -21,7 +22,8 @@
     ],
     "category": "scientific",
     "unicode": "U+00b0",
-    "decimal": "176"
+    "decimal": "176",
+    "symbol": "°F"
   },
   "ℏ": {
     "description": "Planck constant over 2 pi (reduced Planck constant).",
@@ -34,7 +36,8 @@
     ],
     "category": "scientific",
     "unicode": "U+210f",
-    "decimal": "8463"
+    "decimal": "8463",
+    "symbol": "ℏ"
   },
   "ℓ": {
     "description": "Script small l (litre).",
@@ -46,7 +49,8 @@
     ],
     "category": "scientific",
     "unicode": "U+2113",
-    "decimal": "8467"
+    "decimal": "8467",
+    "symbol": "ℓ"
   },
   "Å": {
     "description": "Angstrom unit.",
@@ -58,7 +62,8 @@
     ],
     "category": "scientific",
     "unicode": "U+212b",
-    "decimal": "8491"
+    "decimal": "8491",
+    "symbol": "Å"
   },
   "‰": {
     "description": "Per mille sign (per thousand).",
@@ -70,7 +75,8 @@
     ],
     "category": "scientific",
     "unicode": "U+2030",
-    "decimal": "8240"
+    "decimal": "8240",
+    "symbol": "‰"
   },
   " ": {
     "description": "Em space.",
@@ -81,7 +87,8 @@
     ],
     "category": "scientific",
     "unicode": "U+2001",
-    "decimal": "8193"
+    "decimal": "8193",
+    "symbol": " "
   },
   "℮": {
     "description": "Estimated symbol (for packaging).",
@@ -92,7 +99,8 @@
     ],
     "category": "scientific",
     "unicode": "U+212e",
-    "decimal": "8494"
+    "decimal": "8494",
+    "symbol": "℮"
   },
   "⇌": {
     "description": "Rightwards arrow over leftwards arrow (equilibrium).",
@@ -104,7 +112,8 @@
     ],
     "category": "scientific",
     "unicode": "U+21cc",
-    "decimal": "8652"
+    "decimal": "8652",
+    "symbol": "⇌"
   },
   "⥰": {
     "description": "Reversible reaction arrow.",
@@ -116,7 +125,8 @@
     ],
     "category": "scientific",
     "unicode": "U+2970",
-    "decimal": "10608"
+    "decimal": "10608",
+    "symbol": "⥰"
   },
   "⏃": {
     "description": "Up-pointing triangle with dot (chemical bond).",
@@ -127,6 +137,7 @@
     ],
     "category": "scientific",
     "unicode": "U+23c3",
-    "decimal": "9155"
+    "decimal": "9155",
+    "symbol": "⏃"
   }
 }
