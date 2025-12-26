@@ -70,8 +70,14 @@ function renderSymbol(parent, symbol) {
     const div = document.createElement('div')
     div.classList.add('symbol')
     div.innerHTML = symbol.symbol
+    div.addEventListener('click', () => copyToClipboard(symbol.symbol))
     parent.appendChild(div)
 }
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+}
+
 
 document.addEventListener('DOMContentLoaded', loadCharacterMap)
 
