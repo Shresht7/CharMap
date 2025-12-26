@@ -5,6 +5,7 @@ import { arrows as _arrows } from "./src/arrows.ts";
 import { currency as _currency } from "./src/currency.ts";
 import { common_symbols as _common_symbols } from "./src/common_symbols.ts";
 import { emojis as _emojis } from "./src/emojis.ts";
+import { punctuation as _punctuation } from "./src/punctuation.ts";
 
 // Type Definitions
 import type { RawSymbolEntry, SymbolEntry } from "./types.ts";
@@ -34,6 +35,7 @@ const charmap: Record<string, SymbolEntry> = {
     ...createCategoryMap("currency", _currency),
     ...createCategoryMap("common_symbols", _common_symbols),
     ...createCategoryMap("emojis", _emojis),
+    ...createCategoryMap("punctuation", _punctuation),
 };
 
 // Write character-map to disk as a JSON file
@@ -48,6 +50,7 @@ const categories = {
     currency: _currency,
     common_symbols: _common_symbols,
     emojis: _emojis,
+    punctuation: _punctuation,
 };
 
 const outDir = "data/generator/out";

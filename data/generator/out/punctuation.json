@@ -1,0 +1,172 @@
+{
+  "„": {
+    "description": "Double low-9 quotation mark.",
+    "latex": "\\quotedblbase",
+    "keywords": [
+      "quote",
+      "double",
+      "low-9"
+    ],
+    "category": "punctuation",
+    "unicode": "U+201e",
+    "decimal": "8222"
+  },
+  "“": {
+    "description": "Left double quotation mark.",
+    "latex": "\\textquotedblleft",
+    "keywords": [
+      "quote",
+      "double",
+      "left"
+    ],
+    "category": "punctuation",
+    "unicode": "U+201c",
+    "decimal": "8220"
+  },
+  "”": {
+    "description": "Right double quotation mark.",
+    "latex": "\\textquotedblright",
+    "keywords": [
+      "quote",
+      "double",
+      "right"
+    ],
+    "category": "punctuation",
+    "unicode": "U+201d",
+    "decimal": "8221"
+  },
+  "‘": {
+    "description": "Left single quotation mark.",
+    "latex": "`",
+    "keywords": [
+      "quote",
+      "single",
+      "left"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2018",
+    "decimal": "8216"
+  },
+  "’": {
+    "description": "Right single quotation mark, apostrophe.",
+    "latex": "'",
+    "keywords": [
+      "quote",
+      "single",
+      "right",
+      "apostrophe"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2019",
+    "decimal": "8217"
+  },
+  "‹": {
+    "description": "Single left-pointing angle quotation mark.",
+    "latex": "\\guillemotleft",
+    "keywords": [
+      "quote",
+      "single",
+      "angle",
+      "left"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2039",
+    "decimal": "8249"
+  },
+  "›": {
+    "description": "Single right-pointing angle quotation mark.",
+    "latex": "\\guillemotright",
+    "keywords": [
+      "quote",
+      "single",
+      "angle",
+      "right"
+    ],
+    "category": "punctuation",
+    "unicode": "U+203a",
+    "decimal": "8250"
+  },
+  "«": {
+    "description": "Left-pointing double angle quotation mark.",
+    "latex": "\\guillemetleft",
+    "keywords": [
+      "quote",
+      "double",
+      "angle",
+      "left"
+    ],
+    "category": "punctuation",
+    "unicode": "U+00ab",
+    "decimal": "171"
+  },
+  "»": {
+    "description": "Right-pointing double angle quotation mark.",
+    "latex": "\\guillemetright",
+    "keywords": [
+      "quote",
+      "double",
+      "angle",
+      "right"
+    ],
+    "category": "punctuation",
+    "unicode": "U+00bb",
+    "decimal": "187"
+  },
+  "′": {
+    "description": "Prime.",
+    "latex": "\\prime",
+    "keywords": [
+      "prime",
+      "minute",
+      "foot"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2032",
+    "decimal": "8242"
+  },
+  "″": {
+    "description": "Double prime.",
+    "latex": "\\pprime",
+    "keywords": [
+      "double prime",
+      "second",
+      "inch"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2033",
+    "decimal": "8243"
+  },
+  "‴": {
+    "description": "Triple prime.",
+    "latex": "\\ppprime",
+    "keywords": [
+      "triple prime",
+      "third"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2034",
+    "decimal": "8244"
+  },
+  "℗": {
+    "description": "Sound recording copyright sign.",
+    "latex": "\\textcircledP",
+    "keywords": [
+      "copyright",
+      "sound recording"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2117",
+    "decimal": "8471"
+  },
+  "№": {
+    "description": "Numero sign.",
+    "latex": "\\numero",
+    "keywords": [
+      "numero",
+      "number"
+    ],
+    "category": "punctuation",
+    "unicode": "U+2116",
+    "decimal": "8470"
+  }
+}
