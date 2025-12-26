@@ -2,6 +2,7 @@
     --max-width: 960px;
     --clr-text: #333;
     --clr-background: whitesmoke;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *, *::before, *::after {
@@ -23,6 +24,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 2rem;
+    font-family: var(--font-family);
 }
 
 header, footer {
