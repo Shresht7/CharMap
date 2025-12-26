@@ -72,3 +72,19 @@ main > section {
     flex-wrap: wrap;
     gap: 1rem;
 }
+
+.symbol {
+    width: 3ch;
+    height: 3ch;
+    text-align: center;
+    border: 1px solid var(--clr-text);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: scale 0.25s ease-out;
+}
+
+.symbol:hover {
+    color: var(--clr-background);
+    background: var(--clr-text);
+    scale: 1.25;
+}
