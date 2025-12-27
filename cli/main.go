@@ -13,7 +13,11 @@ func main() {
 		return
 	}
 
-	initialModel := &model{symbols}
+	initialModel := &model{
+		symbols: symbols,
+		query:   "",
+		results: []Symbol{},
+	}
 
 	p := tea.NewProgram(initialModel)
 	if _, err := p.Run(); err != nil {

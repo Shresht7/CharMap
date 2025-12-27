@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"os"
+	"strings"
 )
 
 type Symbol struct {
@@ -13,6 +14,21 @@ type Symbol struct {
 	Latex       string   `json:"latex"`
 	Keywords    []string `json:"keywords"`
 	Description string   `json:"description"`
+}
+
+func (s Symbol) String() string {
+	return strings.Join(
+		[]string{
+			s.Symbol,
+			s.Category,
+			s.Description,
+			strings.Join(s.Keywords, ", "),
+			s.Unicode,
+			s.Decimal,
+			s.Latex,
+		},
+		" ",
+	)
 }
 
 func LoadSymbols(path string) (map[string]Symbol, error) {
