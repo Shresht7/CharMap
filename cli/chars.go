@@ -16,21 +16,6 @@ type Symbol struct {
 	Description string   `json:"description"`
 }
 
-func (s Symbol) String() string {
-	return strings.Join(
-		[]string{
-			s.Symbol,
-			s.Category,
-			s.Description,
-			strings.Join(s.Keywords, ", "),
-			s.Unicode,
-			s.Decimal,
-			s.Latex,
-		},
-		" ",
-	)
-}
-
 func LoadSymbols(path string) (map[string]Symbol, error) {
 	file, err := os.Open(path)
 	if err != nil {
@@ -53,4 +38,26 @@ func GetAllSymbols(symbols map[string]Symbol) []Symbol {
 		allSymbols = append(allSymbols, symbol)
 	}
 	return allSymbols
+}
+
+type SymbolList []Symbol
+
+func (s SymbolList) Len() int {
+	return len(s)
+}
+
+func (s SymbolList) String(i int) string {
+	symbol := s[i]
+	return strings.Join(
+		[]string{
+			symbol.Symbol,
+			symbol.Category,
+			symbol.Description,
+			strings.Join(symbol.Keywords, ", "),
+			symbol.Unicode,
+			symbol.Decimal,
+			symbol.Latex,
+		},
+		" ",
+	)
 }

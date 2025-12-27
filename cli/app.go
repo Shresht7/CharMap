@@ -33,29 +33,21 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func (m *model) View() string {
 	var s strings.Builder
-	list := ToStringList(GetAllSymbols(m.symbols))
 
-	if len(m.results) > 0 {
-		list = ToStringList(m.results)
+	list := GetAllSymbols(m.symbols)
+	if len(m.query) > 0 {
+		list = FuzzySearch(list, m.query)
 	}
 
-	for _, item := range list {
-		s.WriteString(fmt.Sprintf("%s\n", item))
+	for _, symbol := range list {
+		s.WriteString(fmt.Sprintf("%s\n", symbol.Symbol))
 	}
 
 	return s.String()
 }
 
-func ToStringList(symbols []Symbol) []string {
-	list := make([]string, len(symbols))
-	for i, s := range symbols {
-		list[i] = s.String()
-	}
-	return list
-}
-
 func FuzzySearch(symbols []Symbol, query string) []Symbol {
-	matches := fuzzy.Find(query, ToStringList(symbols))
+	matches := fuzzy.FindFrom(query, SymbolList(symbols))
 	results := []Symbol{}
 	for _, m := range matches {
 		results = append(results, symbols[m.Index])
