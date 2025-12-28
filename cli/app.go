@@ -11,12 +11,12 @@ import (
 	"github.com/sahilm/fuzzy"
 )
 
-// The main application model. Responsible for the entire lifecycle of the TUI application
 const (
 	listHPadding = 4
 	listVPadding = 2
 )
 
+// The main application model. Responsible for the entire lifecycle of the TUI application
 type model struct {
 	// data
 	symbols map[string]Symbol
@@ -24,9 +24,13 @@ type model struct {
 	// components
 	input textinput.Model
 	list  list.Model
+
+	// State
 	selectedSymbol Symbol
-	listWidth      int
-	previewWidth   int
+
+	// layout
+	listWidth    int
+	previewWidth int
 
 	// styles
 	container lipgloss.Style
@@ -199,25 +203,4 @@ func (m *model) refreshList(query string) tea.Cmd {
 	}
 
 	return nil
-}
-
-// HELPERS
-// -------
-
-// Helper function to strip a string of all ANSI escape codes to hopefully get the raw string
-// Note: this is a basic implementation and might not handle all ANSI sequences. Consider an external library.
-func stripANSI(s string) string {
-	var b strings.Builder
-	inANSI := false
-	for _, r := range s {
-		if r == '\x1b' { // ESC character
-			inANSI = true
-		} else if inANSI && (r == 'm' || (r >= 'A' && r <= 'Z') || (r >= 'a' && r <= 'z')) {
-			// End of a common ANSI escape sequence (e.g., "\x1b[...m")
-			inANSI = false
-		} else if !inANSI {
-			b.WriteRune(r)
-		}
-	}
-	return b.String()
 }
