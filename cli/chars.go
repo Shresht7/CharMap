@@ -40,23 +40,26 @@ func GetAllSymbols(symbols map[string]Symbol) []Symbol {
 	return allSymbols
 }
 
+// Implements the fuzzy.Source interface
+// SymbolList implements fuzzy.Source for fuzzy searching.
 type SymbolList []Symbol
 
 func (s SymbolList) Len() int {
 	return len(s)
 }
 
+// Used for fuzzy search
 func (s SymbolList) String(i int) string {
 	symbol := s[i]
 	return strings.Join(
 		[]string{
 			symbol.Symbol,
-			symbol.Category,
-			symbol.Description,
-			strings.Join(symbol.Keywords, ", "),
+			strings.Join(symbol.Keywords, " "),
 			symbol.Unicode,
 			symbol.Decimal,
 			symbol.Latex,
+			symbol.Category,
+			symbol.Description,
 		},
 		" ",
 	)
