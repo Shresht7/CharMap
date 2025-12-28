@@ -44,17 +44,14 @@ func NewModel(symbols map[string]Symbol) *model {
 	delegate := newDelegate()
 	l := list.New([]list.Item{}, delegate, 0, 0)
 	l.Title = ""
-	// l.SetShowStatusBar(false)
 	l.SetFilteringEnabled(false)
-	// l.SetShowHelp(false)
-	// l.SetShowPagination(false)
 
 	return &model{
 		symbols:   symbols,
 		input:     input,
 		list:      l,
 		container: lipgloss.NewStyle().Padding(1, 2),
-		separator: lipgloss.NewStyle().Foreground(lipgloss.Color("240")),
+		separator: lipgloss.NewStyle().Foreground(lipgloss.Color("9")),
 	}
 }
 
