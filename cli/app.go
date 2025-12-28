@@ -24,6 +24,9 @@ type model struct {
 	// components
 	input textinput.Model
 	list  list.Model
+	selectedSymbol Symbol
+	listWidth      int
+	previewWidth   int
 
 	// styles
 	container lipgloss.Style
@@ -45,6 +48,8 @@ func NewModel(symbols map[string]Symbol) *model {
 	l := list.New([]list.Item{}, delegate, 0, 0)
 	l.Title = ""
 	l.SetFilteringEnabled(false)
+	l.SetShowStatusBar(false)
+	l.SetShowHelp(true)
 
 	return &model{
 		symbols:   symbols,
@@ -57,16 +62,33 @@ func NewModel(symbols map[string]Symbol) *model {
 
 func (m *model) Init() tea.Cmd {
 	// Initial: show all items
-	return m.refreshList("")
+	return tea.Batch(m.refreshList(""), m.updateSelectedSymbolCmd())
+}
+
+func (m *model) updateSelectedSymbolCmd() tea.Cmd {
+	if item := m.list.SelectedItem(); item != nil {
+		if symbolItem, ok := item.(symbolItem); ok {
+			m.selectedSymbol = symbolItem.Symbol
+		}
+	}
+	return nil
 }
 
 func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 
 	case tea.WindowSizeMsg:
-		// Layout: input height ~7, list takes the rest
 		inputHeight := 7
-		m.list.SetSize(msg.Width-listHPadding, msg.Height-inputHeight-listVPadding)
+		dividerHeight := 1 // Height of the divider line
+		// Calculate split widths
+		totalWidth := msg.Width - listHPadding // Account for outer container padding
+		m.listWidth = int(float64(totalWidth) * 0.70)
+		m.previewWidth = totalWidth - m.listWidth
+
+		// Set input width to take up full available width
+		m.input.Width = totalWidth - m.container.GetHorizontalPadding() - m.container.GetHorizontalBorderSize() // Adjust for container's padding
+
+		m.list.SetSize(m.listWidth, msg.Height-inputHeight-dividerHeight-listVPadding)
 		return m, nil
 
 	case tea.KeyMsg:
@@ -75,12 +97,13 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			return m, tea.Quit
 		case "enter":
 			// TODO: Copy selected item to clipboard
+			return m, m.updateSelectedSymbolCmd()
 		case "up":
 			m.list.CursorUp()
-			return m, nil
+			return m, m.updateSelectedSymbolCmd()
 		case "down":
 			m.list.CursorDown()
-			return m, nil
+			return m, m.updateSelectedSymbolCmd()
 		}
 
 		// Update input and refresh list when text changes
@@ -88,7 +111,7 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		prev := m.input.Value()
 		m.input, cmd = m.input.Update(msg)
 		if m.input.Value() != prev {
-			return m, tea.Batch(cmd, m.refreshList(m.input.Value()))
+			return m, tea.Batch(cmd, m.refreshList(m.input.Value()), m.updateSelectedSymbolCmd())
 		}
 		return m, cmd
 	}
@@ -96,14 +119,55 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m *model) View() string {
-	header := m.input.View()
-	divider := m.separator.Render(strings.Repeat("-", max(3, len(stripANSI(header)))))
-	return m.container.Render(
+	// Input field always takes full width
+	inputView := m.input.View()
+
+	// Divider below the input, spanning its full width
+	divider := m.separator.Render(strings.Repeat("-", max(3, lipgloss.Width(inputView))))
+
+	// Main list content (left panel) - no longer includes the input header
+	listPanel := lipgloss.NewStyle().Width(m.listWidth).Render(
 		lipgloss.JoinVertical(
 			lipgloss.Left,
-			header,
-			divider,
 			m.list.View(),
+			lipgloss.NewStyle().Height(1).Render(""), // Add padding after list/help text
+		),
+	)
+
+	// Preview panel (right panel)
+	previewPanelContent := ""
+	if m.selectedSymbol.Symbol != "" { // Only show if a symbol is selected
+		// Define styles for preview panel
+		previewTitleStyle := lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("205"))
+		previewValueStyle := lipgloss.NewStyle().Foreground(lipgloss.Color("246"))
+
+		previewPanelContent = lipgloss.JoinVertical(lipgloss.Left,
+			previewTitleStyle.Render("Symbol:"), previewValueStyle.Render(m.selectedSymbol.Symbol), lipgloss.NewStyle().Height(1).Render(""),
+			previewTitleStyle.Render("Description:"), previewValueStyle.Render(m.selectedSymbol.Description), lipgloss.NewStyle().Height(1).Render(""),
+			previewTitleStyle.Render("Category:"), previewValueStyle.Render(m.selectedSymbol.Category), lipgloss.NewStyle().Height(1).Render(""),
+			previewTitleStyle.Render("Unicode:"), previewValueStyle.Render(m.selectedSymbol.Unicode), lipgloss.NewStyle().Height(1).Render(""),
+			previewTitleStyle.Render("Decimal:"), previewValueStyle.Render(m.selectedSymbol.Decimal), lipgloss.NewStyle().Height(1).Render(""),
+			previewTitleStyle.Render("LaTeX:"), previewValueStyle.Render(m.selectedSymbol.Latex), lipgloss.NewStyle().Height(1).Render(""),
+			previewTitleStyle.Render("Keywords:"), previewValueStyle.Render(strings.Join(m.selectedSymbol.Keywords, "\n")),
+		)
+	}
+
+	previewPanel := lipgloss.NewStyle().
+		Width(m.previewWidth). // Use calculated width
+		Border(lipgloss.RoundedBorder()).
+		BorderForeground(lipgloss.Color("240")).
+		Padding(1, 2).
+		Render(previewPanelContent)
+
+	// Join the input, divider, and then the horizontal panels vertically
+	return m.container.Render(
+		lipgloss.JoinVertical(lipgloss.Left,
+			inputView,
+			divider,
+			lipgloss.JoinHorizontal(lipgloss.Top,
+				listPanel,
+				previewPanel,
+			),
 		),
 	)
 }

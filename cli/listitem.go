@@ -45,11 +45,11 @@ func newDelegate() itemDelegate {
 		metaStyle:     lipgloss.NewStyle().Foreground(lipgloss.Color("246")),
 		selectedStyle:     lipgloss.NewStyle().Bold(true),
 		selectedTextStyle: lipgloss.NewStyle().Foreground(lipgloss.Color("205")).Bold(true),
-		unselectedTextStyle: lipgloss.NewStyle().Foreground(lipgloss.Color("252")),
+		unselectedTextStyle: lipgloss.NewStyle().Foreground(lipgloss.Color("240")),
 	}
 }
 
-func (d itemDelegate) Height() int  { return 2 }
+func (d itemDelegate) Height() int  { return 1 }
 func (d itemDelegate) Spacing() int { return 1 }
 
 func (d itemDelegate) Update(_ tea.Msg, _ *list.Model) tea.Cmd {
@@ -62,24 +62,7 @@ func (d itemDelegate) Render(w io.Writer, m list.Model, index int, it list.Item)
 	// First line: symbol glyph + description
 	line1 := fmt.Sprintf("%s  %s",
 		d.titleStyle.Render(i.Symbol.Symbol),
-		i.Description())
-
-	// Second line: chips (unicode, decimal, category, latex)
-	tags := []string{}
-	if i.Category != "" {
-		tags = append(tags, fmt.Sprintf("[Category: %s]", i.Category))
-	}
-	if i.Unicode != "" {
-		tags = append(tags, fmt.Sprintf("[Unicode: %s]", i.Unicode))
-	}
-	if i.Decimal != "" {
-		tags = append(tags, fmt.Sprintf("[Decimal: %s]", i.Decimal))
-	}
-	if i.Latex != "" {
-		tags = append(tags, fmt.Sprintf("[LaTeX: \\%s]", i.Latex))
-	}
-
-	line2 := d.metaStyle.Render(strings.Join(tags, " "))
+		i.Symbol.Description)
 
 	var itemTextStyle lipgloss.Style
 	if index == m.Index() {
@@ -89,16 +72,14 @@ func (d itemDelegate) Render(w io.Writer, m list.Model, index int, it list.Item)
 	}
 
 	// Create the content for the item
-	itemContent := lipgloss.JoinVertical(lipgloss.Left,
-		itemTextStyle.Render(line1),
-		itemTextStyle.Render(line2),
-	)
+	itemContent := itemTextStyle.Render(line1)
 
 	// Prepend the chevron if selected, or spaces for alignment if not
 	if index == m.Index() {
 		fmt.Fprint(w, d.selectedStyle.Render("❯ ")+itemContent)
 	} else {
-		fmt.Fprint(w, "  "+itemContent)
+		// Apply the unselectedTextStyle to the entire line including padding
+		fmt.Fprint(w, d.unselectedTextStyle.Render("  "+itemContent))
 	}
 
 }
