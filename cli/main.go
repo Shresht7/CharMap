@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"log"
+	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
 )
@@ -24,6 +26,7 @@ func main() {
 	// Run the application
 	p := tea.NewProgram(initialModel)
 	if _, err := p.Run(); err != nil {
-		fmt.Println("Failed to start program: ", err)
+		log.Fatalf("Failed to start program: %s\n", err)
+		os.Exit(1)
 	}
 }
