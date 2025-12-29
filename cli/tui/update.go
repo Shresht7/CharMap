@@ -2,6 +2,8 @@ package tui
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
+
+	"github.com/Shresht7/CharMap/cli/tui/components"
 )
 
 func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
@@ -11,14 +13,14 @@ func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		inputHeight := 7
 		dividerHeight := 1 // Height of the divider line
 		// Calculate split widths
-		totalWidth := msg.Width - HPadding // Account for outer container padding
+		totalWidth := msg.Width - components.HPadding // Account for outer container padding
 		m.listWidth = int(float64(totalWidth) * 0.70)
 		m.previewWidth = totalWidth - m.listWidth
 
 		// Set input width to take up full available width
 		m.input.Width = totalWidth - m.container.GetHorizontalPadding() - m.container.GetHorizontalBorderSize() // Adjust for container's padding
 
-		m.list.SetSize(m.listWidth, msg.Height-inputHeight-dividerHeight-VPadding)
+		m.list.SetSize(m.listWidth, msg.Height-inputHeight-dividerHeight-components.VPadding)
 		return m, nil
 
 	case tea.KeyMsg:

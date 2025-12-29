@@ -1,10 +1,10 @@
-package tui
+package components
 
 import (
 	"strings"
 
-	"github.com/charmbracelet/lipgloss"
 	"github.com/Shresht7/CharMap/cli/charmap"
+	"github.com/charmbracelet/lipgloss"
 )
 
 type Preview struct {
