@@ -21,8 +21,10 @@ type Model struct {
 	preview *components.Preview
 
 	// layout
-	listWidth    int
-	previewWidth int
+	width    int
+	height   int
+	hPadding int
+	vPadding int
 
 	// styles
 	container lipgloss.Style
@@ -36,10 +38,13 @@ func NewModel(symbols map[string]charmap.Symbol) *Model {
 		input:     components.NewInput(),
 		list:      components.NewList(),
 		preview:   components.NewPreview(),
-		container: lipgloss.NewStyle().Padding(1, 2),
+		hPadding:  4,
+		vPadding:  2,
+		container: lipgloss.NewStyle(),
 		separator: lipgloss.NewStyle().Foreground(lipgloss.Color("9")),
 	}
 }
+
 
 func (m *Model) Init() tea.Cmd {
 	// Initial: show all items

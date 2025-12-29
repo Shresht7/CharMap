@@ -13,8 +13,12 @@ func (m *Model) View() string {
 	// Divider below the input, spanning its full width
 	divider := m.separator.Render(strings.Repeat("-", max(3, lipgloss.Width(inputView))))
 
+	// Calculate split widths
+	listWidth := int(float64(m.width-m.hPadding*2) * 0.70)
+	previewWidth := m.width - m.hPadding*2 - listWidth
+
 	// Main list content (left panel) - no longer includes the input header
-	listPanel := lipgloss.NewStyle().Width(m.listWidth).Render(
+	listPanel := lipgloss.NewStyle().Width(listWidth).Render(
 		lipgloss.JoinVertical(
 			lipgloss.Left,
 			m.list.View(),
@@ -24,7 +28,7 @@ func (m *Model) View() string {
 
 	// Preview panel (right panel)
 	previewPanel := lipgloss.NewStyle().
-		Width(m.previewWidth).
+		Width(previewWidth).
 		Render(m.preview.View())
 
 	// Join the input, divider, and then the horizontal panels vertically
