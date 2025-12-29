@@ -1,5 +1,4 @@
-// ui.go
-package main
+package char_list
 
 import (
 	"fmt"
@@ -9,14 +8,16 @@ import (
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+
+	charmap "github.com/Shresht7/CharMap/cli/charmap"
 )
 
-type symbolItem struct{ Symbol }
+type SymbolItem struct{ charmap.Symbol }
 
-func (i symbolItem) Title() string       { return i.Symbol.Symbol }
-func (i symbolItem) Description() string { return i.Symbol.Description }
+func (i SymbolItem) Title() string       { return i.Symbol.Symbol }
+func (i SymbolItem) Description() string { return i.Symbol.Description }
 
-func (i symbolItem) FilterValue() string {
+func (i SymbolItem) FilterValue() string {
 	// Allow searching across all fields
 	return strings.Join([]string{
 		i.Symbol.Symbol,
@@ -30,21 +31,21 @@ func (i symbolItem) FilterValue() string {
 }
 
 type itemDelegate struct {
-	tagStyle      lipgloss.Style
-	titleStyle    lipgloss.Style
-	metaStyle         lipgloss.Style
-	selectedStyle     lipgloss.Style
-	selectedTextStyle lipgloss.Style
+	tagStyle            lipgloss.Style
+	titleStyle          lipgloss.Style
+	metaStyle           lipgloss.Style
+	selectedStyle       lipgloss.Style
+	selectedTextStyle   lipgloss.Style
 	unselectedTextStyle lipgloss.Style
 }
 
 func newDelegate() itemDelegate {
 	return itemDelegate{
-		titleStyle:    lipgloss.NewStyle().Bold(true),
-		tagStyle:      lipgloss.NewStyle().Foreground(lipgloss.Color("205")).PaddingRight(1),
-		metaStyle:     lipgloss.NewStyle().Foreground(lipgloss.Color("246")),
-		selectedStyle:     lipgloss.NewStyle().Bold(true),
-		selectedTextStyle: lipgloss.NewStyle().Foreground(lipgloss.Color("205")).Bold(true),
+		titleStyle:          lipgloss.NewStyle().Bold(true),
+		tagStyle:            lipgloss.NewStyle().Foreground(lipgloss.Color("205")).PaddingRight(1),
+		metaStyle:           lipgloss.NewStyle().Foreground(lipgloss.Color("246")),
+		selectedStyle:       lipgloss.NewStyle().Bold(true),
+		selectedTextStyle:   lipgloss.NewStyle().Foreground(lipgloss.Color("205")).Bold(true),
 		unselectedTextStyle: lipgloss.NewStyle().Foreground(lipgloss.Color("240")),
 	}
 }
@@ -57,7 +58,7 @@ func (d itemDelegate) Update(_ tea.Msg, _ *list.Model) tea.Cmd {
 }
 
 func (d itemDelegate) Render(w io.Writer, m list.Model, index int, it list.Item) {
-	i := it.(symbolItem)
+	i := it.(SymbolItem)
 
 	// First line: symbol glyph + description
 	line1 := fmt.Sprintf("%s  %s",

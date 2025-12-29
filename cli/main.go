@@ -6,6 +6,8 @@ import (
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
+
+	charmap "github.com/Shresht7/CharMap/cli/charmap"
 )
 
 // The main entrypoint to the application
@@ -14,7 +16,7 @@ func main() {
 	// TODO: Hardcoded data-path. Embed or make it configurable
 	// 		 This makes the application less flexible if the data file needs to be
 	//		 located elsewhere, or i the executable is run from a different directory than intended.
-	symbols, err := LoadSymbols("../data/charmap.json")
+	symbols, err := charmap.LoadSymbols("../data/charmap.json")
 	if err != nil {
 		fmt.Println("Error loading symbols:", err)
 		return

@@ -1,4 +1,4 @@
-package main
+package charmap
 
 import (
 	"encoding/json"
