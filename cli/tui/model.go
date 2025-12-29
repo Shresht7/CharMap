@@ -1,4 +1,4 @@
-package main
+package tui
 
 import (
 	"sort"
@@ -11,11 +11,10 @@ import (
 	"github.com/sahilm/fuzzy"
 
 	charmap "github.com/Shresht7/CharMap/cli/charmap"
-	list "github.com/Shresht7/CharMap/cli/list"
 )
 
 // The main application model. Responsible for the entire lifecycle of the TUI application
-type model struct {
+type Model struct {
 	// data
 	symbols map[string]charmap.Symbol
 
@@ -36,7 +35,7 @@ type model struct {
 }
 
 // Instantiates a new bubbletea application model
-func NewModel(symbols map[string]charmap.Symbol) *model {
+func NewModel(symbols map[string]charmap.Symbol) *Model {
 	// Text Input Component
 	input := bubblesTextInput.New()
 	input.Placeholder = "  Search..."
@@ -46,9 +45,9 @@ func NewModel(symbols map[string]charmap.Symbol) *model {
 	input.Focus()
 
 	// List Component
-	l := list.New()
+	l := NewList()
 
-	return &model{
+	return &Model{
 		symbols:   symbols,
 		input:     input,
 		list:      l,
@@ -57,35 +56,35 @@ func NewModel(symbols map[string]charmap.Symbol) *model {
 	}
 }
 
-func (m *model) Init() tea.Cmd {
+func (m *Model) Init() tea.Cmd {
 	// Initial: show all items
 	return tea.Batch(m.refreshList(""), m.updateSelectedSymbolCmd())
 }
 
-func (m *model) updateSelectedSymbolCmd() tea.Cmd {
+func (m *Model) updateSelectedSymbolCmd() tea.Cmd {
 	if item := m.list.SelectedItem(); item != nil {
-		if symbolItem, ok := item.(list.SymbolItem); ok {
+		if symbolItem, ok := item.(SymbolItem); ok {
 			m.selectedSymbol = symbolItem.Symbol
 		}
 	}
 	return nil
 }
 
-func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 
 	case tea.WindowSizeMsg:
 		inputHeight := 7
 		dividerHeight := 1 // Height of the divider line
 		// Calculate split widths
-		totalWidth := msg.Width - list.HPadding // Account for outer container padding
+		totalWidth := msg.Width - HPadding // Account for outer container padding
 		m.listWidth = int(float64(totalWidth) * 0.70)
 		m.previewWidth = totalWidth - m.listWidth
 
 		// Set input width to take up full available width
 		m.input.Width = totalWidth - m.container.GetHorizontalPadding() - m.container.GetHorizontalBorderSize() // Adjust for container's padding
 
-		m.list.SetSize(m.listWidth, msg.Height-inputHeight-dividerHeight-list.VPadding)
+		m.list.SetSize(m.listWidth, msg.Height-inputHeight-dividerHeight-VPadding)
 		return m, nil
 
 	case tea.KeyMsg:
@@ -115,7 +114,7 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	return m, nil
 }
 
-func (m *model) View() string {
+func (m *Model) View() string {
 	// Input field always takes full width
 	inputView := m.input.View()
 
@@ -170,7 +169,7 @@ func (m *model) View() string {
 }
 
 // refreshList runs fuzzy search and updates the list items
-func (m *model) refreshList(query string) tea.Cmd {
+func (m *Model) refreshList(query string) tea.Cmd {
 	// Convert map to slice
 	all := charmap.GetAllSymbols(m.symbols)
 	// Sort by symbol for consistent ordering
@@ -179,12 +178,12 @@ func (m *model) refreshList(query string) tea.Cmd {
 	items := []bubblesList.Item{}
 	if strings.TrimSpace(query) == "" {
 		for _, s := range all {
-			items = append(items, list.SymbolItem{Symbol: s})
+			items = append(items, SymbolItem{Symbol: s})
 		}
 	} else {
 		matches := fuzzy.FindFrom(query, charmap.SymbolList(all))
 		for _, m := range matches {
-			items = append(items, list.SymbolItem{Symbol: all[m.Index]})
+			items = append(items, SymbolItem{Symbol: all[m.Index]})
 		}
 	}
 
@@ -196,4 +195,11 @@ func (m *model) refreshList(query string) tea.Cmd {
 	}
 
 	return nil
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }

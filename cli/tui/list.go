@@ -1,4 +1,4 @@
-package char_list
+package tui
 
 import (
 	"fmt"
@@ -11,6 +11,21 @@ import (
 
 	charmap "github.com/Shresht7/CharMap/cli/charmap"
 )
+
+const (
+	HPadding = 4
+	VPadding = 2
+)
+
+func NewList() list.Model {
+	delegate := newDelegate()
+	l := list.New([]list.Item{}, delegate, 0, 0)
+	l.Title = ""
+	l.SetFilteringEnabled(false)
+	l.SetShowStatusBar(false)
+	l.SetShowHelp(true)
+	return l
+}
 
 type SymbolItem struct{ charmap.Symbol }
 

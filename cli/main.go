@@ -7,7 +7,8 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	charmap "github.com/Shresht7/CharMap/cli/charmap"
+	"github.com/Shresht7/CharMap/cli/charmap"
+	"github.com/Shresht7/CharMap/cli/tui"
 )
 
 // The main entrypoint to the application
@@ -23,7 +24,7 @@ func main() {
 	}
 
 	// Initialize the bubbletea application model
-	initialModel := NewModel(symbols)
+	initialModel := tui.NewModel(symbols)
 
 	// Run the application
 	p := tea.NewProgram(initialModel)
