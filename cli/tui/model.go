@@ -1,8 +1,8 @@
 package tui
 
 import (
-	bubblesList "github.com/charmbracelet/bubbles/list"
-	bubblesTextInput "github.com/charmbracelet/bubbles/textinput"
+	"github.com/charmbracelet/bubbles/list"
+	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
@@ -15,11 +15,9 @@ type Model struct {
 	symbols map[string]charmap.Symbol
 
 	// components
-	input bubblesTextInput.Model
-	list  bubblesList.Model
-
-	// State
-	selectedSymbol charmap.Symbol
+	input   textinput.Model
+	list    list.Model
+	preview *Preview
 
 	// layout
 	listWidth    int
@@ -32,21 +30,11 @@ type Model struct {
 
 // Instantiates a new bubbletea application model
 func NewModel(symbols map[string]charmap.Symbol) *Model {
-	// Text Input Component
-	input := bubblesTextInput.New()
-	input.Placeholder = "  Search..."
-	input.Cursor.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("#ffffff"))
-	input.PlaceholderStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("#6e6e6eff"))
-	input.Width = 20
-	input.Focus()
-
-	// List Component
-	l := NewList()
-
 	return &Model{
 		symbols:   symbols,
-		input:     input,
-		list:      l,
+		input:     NewInput(),
+		list:      NewList(),
+		preview:   NewPreview(),
 		container: lipgloss.NewStyle().Padding(1, 2),
 		separator: lipgloss.NewStyle().Foreground(lipgloss.Color("9")),
 	}

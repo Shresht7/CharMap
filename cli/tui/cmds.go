@@ -14,7 +14,7 @@ import (
 func (m *Model) updateSelectedSymbolCmd() tea.Cmd {
 	if item := m.list.SelectedItem(); item != nil {
 		if symbolItem, ok := item.(SymbolItem); ok {
-			m.selectedSymbol = symbolItem.Symbol
+			m.preview.SetSymbol(symbolItem.Symbol)
 		}
 	}
 	return nil
