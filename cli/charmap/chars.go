@@ -1,8 +1,8 @@
 package charmap
 
 import (
+	"bytes"
 	"encoding/json"
-	"os"
 	"strings"
 )
 
@@ -16,15 +16,9 @@ type Symbol struct {
 	Description string   `json:"description"`
 }
 
-func LoadSymbols(path string) (map[string]Symbol, error) {
-	file, err := os.Open(path)
-	if err != nil {
-		return nil, err
-	}
-	defer file.Close()
-
+func LoadSymbols(data []byte) (map[string]Symbol, error) {
 	var symbols map[string]Symbol
-	decoder := json.NewDecoder(file)
+	decoder := json.NewDecoder(bytes.NewReader(data))
 	if err := decoder.Decode(&symbols); err != nil {
 		return nil, err
 	}

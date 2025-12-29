@@ -1,9 +1,9 @@
 package main
 
 import (
+	_ "embed"
 	"fmt"
 	"log"
-	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
 
@@ -11,13 +11,13 @@ import (
 	"github.com/Shresht7/CharMap/cli/tui"
 )
 
+//go:embed charmap.json
+var charmapJSON []byte
+
 // The main entrypoint to the application
 func main() {
 	// Load the character-map data
-	// TODO: Hardcoded data-path. Embed or make it configurable
-	// 		 This makes the application less flexible if the data file needs to be
-	//		 located elsewhere, or i the executable is run from a different directory than intended.
-	symbols, err := charmap.LoadSymbols("../data/charmap.json")
+	symbols, err := charmap.LoadSymbols(charmapJSON)
 	if err != nil {
 		fmt.Println("Error loading symbols:", err)
 		return
@@ -30,6 +30,5 @@ func main() {
 	p := tea.NewProgram(initialModel)
 	if _, err := p.Run(); err != nil {
 		log.Fatalf("Failed to start program: %s\n", err)
-		os.Exit(1)
 	}
 }
